@@ -1,0 +1,3 @@
+# Optional local semantic retrieval; the application also supports explicit lexical mode.
+-r requirements.txt
+fastembed==0.9.1

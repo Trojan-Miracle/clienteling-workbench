@@ -1,0 +1,3701 @@
+{
+  "dataset_id": "v6-human-review12-1",
+  "version": "v6.0",
+  "selection": "六场景各两例的开发者抽样验收；不是随机盲测，不代表整体通过率。原始候选固定，新改写单独保存。",
+  "cases": [
+    {
+      "as_of": "2026-11-10T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-01",
+        "name": "顾澄",
+        "salutation": "阿澄"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "v5-person-01-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:44:37.284824+00:00",
+          "text": "叫我阿澄。我喜欢绿色，平时带手机、短钱包和折叠伞。可以发和这些需求相关的信息。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-001-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:44:37.298712+00:00",
+          "text": "想买一只周末一直背的小包，东西就是之前说的那些，20和26怎么选？"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-002-client",
+          "kind": "message",
+          "occurred_at": "2026-02-04T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:45:20.007400+00:00",
+          "text": "26是8800吧？两只一起买能不能给点折扣？不用给我换便宜款。"
+        },
+        {
+          "actor": "system",
+          "customer_id": "v5-person-01",
+          "data": {
+            "product_id": "PONT26"
+          },
+          "id": "V6R-003-prior-0",
+          "kind": "purchase",
+          "occurred_at": "2026-02-07T01:50:00+00:00",
+          "recorded_at": "2026-11-07T17:45:44.411137+00:00",
+          "text": "已购买深杉绿Pont 26并交付。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-003-client",
+          "kind": "message",
+          "occurred_at": "2026-02-07T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:45:44.412972+00:00",
+          "text": "昨天买的26肩带有点长，我想调短一格，应该怎么动那个扣？"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-004-client",
+          "kind": "message",
+          "occurred_at": "2026-11-10T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:46:20.260554+00:00",
+          "text": "今天生日，晚上和朋友吃饭。包刚好可以背上，你简单祝福我一句就好。"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.292919+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "d714889cf7a443eb9668f42620fd3d4b",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.292929+00:00",
+          "value": "平时带手机、短钱包和折叠伞"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.289168+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "51ff7714a616480282fa81ea916696c5",
+          "key": "color",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.289178+00:00",
+          "value": "我喜欢绿色"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.296809+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "1bde987b4e5845b8b931bf12c15333a7",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.296820+00:00",
+          "value": "allowed"
+        }
+      ],
+      "products": [],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": null,
+      "case_id": "V6R-004",
+      "source_run_id": "575ea1440bee43baad05387b4de3f151",
+      "source_sha256": "9d439ed4c8bc3bd356113ca68717240d549602c1461f28efc46c798ee01434fc",
+      "scenario": "greeting",
+      "candidates": [
+        {
+          "id": "a",
+          "text": "阿澄，生日快乐，今晚和朋友吃得开心！"
+        },
+        {
+          "id": "c",
+          "text": "生日快乐呀，阿澄，今晚和朋友好好庆祝一下！"
+        },
+        {
+          "id": "b",
+          "text": "阿澄，生日快乐，祝你新的一岁顺心开心！"
+        }
+      ],
+      "generated_scenario": "greeting"
+    },
+    {
+      "as_of": "2026-02-01T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-01",
+        "name": "顾澄",
+        "salutation": "阿澄"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "v5-person-01-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:44:37.284824+00:00",
+          "text": "叫我阿澄。我喜欢绿色，平时带手机、短钱包和折叠伞。可以发和这些需求相关的信息。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-001-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:44:37.298712+00:00",
+          "text": "想买一只周末一直背的小包，东西就是之前说的那些，20和26怎么选？"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.292919+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "d714889cf7a443eb9668f42620fd3d4b",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.292929+00:00",
+          "value": "平时带手机、短钱包和折叠伞"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.289168+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "51ff7714a616480282fa81ea916696c5",
+          "key": "color",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.289178+00:00",
+          "value": "我喜欢绿色"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.296809+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "1bde987b4e5845b8b931bf12c15333a7",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.296820+00:00",
+          "value": "allowed"
+        }
+      ],
+      "products": [
+        {
+          "capacity": "手机、卡夹和普通家门钥匙；不能放折叠伞、长钱包或大号车钥匙盒。",
+          "care": "柔软干布轻拭，避免酒精和尖锐物；浅色皮革避免与容易掉色的衣物长期摩擦。",
+          "carry": "肩背或斜挎；拆下肩带可手拿。",
+          "catalog_version": "virel-catalog-3",
+          "collection": "PONT",
+          "colors": [
+            "石灰白",
+            "墨黑"
+          ],
+          "construction": "延续横桥扣与圆角侧片，肩带从侧面金属环拆卸；细窄边缘手工打磨，主体机器缝制。",
+          "design_notes": [
+            {
+              "detail": "横桥扣与圆角侧片仍然完整，包身缩到20厘米宽；手机、卡夹和普通钥匙够用，长钱包和折叠伞不在其用途内。",
+              "title": "保留比例，减去空间"
+            },
+            {
+              "detail": "肩带两端可拆，拆下后可手拿；它没有另配手柄。光面浅色皮革保留更干净的面，但需要注意深色衣物染色。",
+              "title": "两种拿法"
+            }
+          ],
+          "dimensions_cm": [
+            20,
+            14,
+            7
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "只带手机、卡夹和普通钥匙，希望肩背、斜挎或拆带手拿。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "是否常带长钱包、车钥匙盒或雨伞；石灰白是否会接触掉色衣物。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "pont20.png"
+            }
+          ],
+          "id": "PONT20",
+          "image": "pont20.png",
+          "limits": [
+            "浅色款更需要注意染色。",
+            "光面皮革可能出现使用划痕。"
+          ],
+          "material": "光面小牛皮，超细纤维内衬",
+          "name": "Pont 20 小号肩包",
+          "price_cny": 7200,
+          "subtitle": "把桥扣轮廓收进更小的比例",
+          "use_guide": "肩带通过针扣与五个孔位调节。调短时先把包放稳、让肩带不受力，打开针扣，将扣针移到更靠近包身的孔位，扣好后把带尾穿回皮圈。试背确认长度；若扣针卡住或实物结构与说明不符，停止硬拉并联系顾问确认。",
+          "value_story": "保留 Pont 横桥扣的比例，缩短侧片深度，使小包手拿时轮廓也完整；不是把大包所有功能缩小复制。",
+          "weight_g": 420
+        },
+        {
+          "capacity": "手机、短钱包、钥匙和小型折叠伞；不能装13英寸电脑或A4文件。",
+          "care": "轻微浮灰用柔软干布轻拭；淋雨后吸去表面水分，在阴凉通风处自然晾干；不使用酒精、不烘干、不浸水。",
+          "carry": "可调节可拆卸肩带，肩背或斜挎。",
+          "catalog_version": "virel-catalog-3",
+          "collection": "PONT",
+          "colors": [
+            "深杉绿",
+            "墨黑"
+          ],
+          "construction": "前片折返形成浅立体口袋；包口采用哑光黄铜色横桥扣，两端圆头铆钉；边缘分层涂覆并打磨。结构缝线为机器缝制，边缘与金属装配由手工完成，不称全手缝。",
+          "design_notes": [
+            {
+              "detail": "翻盖下的浅立体前袋与主空间分开，方便把卡夹或薄票据从其余随身物里分出来；前袋仍需打开翻盖取用。",
+              "title": "把常用物放在前面"
+            },
+            {
+              "detail": "低矮横桥贴近包面，两端圆头铆钉与圆角侧片呼应。它提供固定的开合位置；不是防盗锁，也不是贵金属首饰。",
+              "title": "扣件也是轮廓的一部分"
+            },
+            {
+              "detail": "平底与围合侧片支撑轮廓，让包放下后保持形状。约610克自重、固定体积，是这份结构感的取舍；它不适合卷收或携带电脑。",
+              "title": "让包保持站立的形状"
+            }
+          ],
+          "dimensions_cm": [
+            26,
+            18,
+            9
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "手机、短钱包、钥匙与小型折叠伞；想把常用小物和主空间分开。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "折叠伞的实际长度与厚度、装满后的重量及肩带长度。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "pont26.png"
+            },
+            {
+              "caption": "同一横桥，两种尺度",
+              "image": "bridge-family-v6.png"
+            }
+          ],
+          "id": "PONT26",
+          "image": "pont26.png",
+          "limits": [
+            "金属扣并非贵金属；重量约610克，不属于超轻包。",
+            "不具备防水或防盗认证。"
+          ],
+          "material": "细粒面小牛皮，棉麻混纺内衬",
+          "name": "Pont 26 桥扣肩包",
+          "price_cny": 8800,
+          "subtitle": "箱匣的秩序，落在日常尺度",
+          "use_guide": "肩带通过针扣与五个孔位调节。调短时先把包放稳、让肩带不受力，打开针扣，将扣针移到更靠近包身的孔位，扣好后把带尾穿回皮圈。试背确认长度；若扣针卡住或实物结构与说明不符，停止硬拉并联系顾问确认。",
+          "value_story": "2018年 Pont 系列把工坊箱匣的横桥扣缩小为日常开合。两端铆钉和低矮扣件让包面保持平整，结构感来自扣和折边，而不是大面积标识。",
+          "weight_g": 610
+        }
+      ],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": null,
+      "case_id": "V6R-001",
+      "source_run_id": "6d4ddf3d04b2454db6d07f92e95dd44f",
+      "source_sha256": "a99e9d7ed60ed9e917c14596521531a729524a3c39f07f300af64f86085cd62f",
+      "scenario": "recommendation",
+      "candidates": [
+        {
+          "id": "b",
+          "text": "如果周末也要带折叠伞，我会选26：它能容纳手机、短钱包和小型折叠伞，20则放不下伞。26有你喜欢的深杉绿，不过空包约610克，20是420克。选前带上常用物试装试背，看看你的伞是否合适、装好后背着是否舒服。"
+        },
+        {
+          "id": "a",
+          "text": "阿澄，我更推荐深杉绿的26，手机、短钱包和小型折叠伞更适合用它装，颜色也合你喜好。20放不下折叠伞；26空包约610克，比20重190克。想周末一直背，选前用你常带的东西试装，核对伞的大小和装好后的背负感受。"
+        },
+        {
+          "id": "c",
+          "text": "阿澄，按你现在带的东西，优先选深杉绿26；20更适合手机、卡夹和普通钥匙，放不下折叠伞。26能放小型折叠伞，但空包约610克，比20重190克。你的伞还要核对实际长度和厚度，再装上随身物试背，确认适不适合周末长时间背。"
+        }
+      ],
+      "generated_scenario": "recommendation"
+    },
+    {
+      "as_of": "2026-02-04T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-05",
+        "name": "许宛",
+        "salutation": "宛宛"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-05",
+          "data": {},
+          "id": "v5-person-05-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:49:24.051671+00:00",
+          "text": "我想看黑色小包，先看看。我有需要会来问，有和轻量出行相关的新消息也可以联系我。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-05",
+          "data": {},
+          "id": "V6R-021-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "partially_redacted": true,
+          "recorded_at": "2026-11-07T17:49:24.059617+00:00",
+          "text": "［已撤回的事实］。你们目录里有能装手机、证件的小肩包吗？"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-05",
+          "data": {},
+          "id": "V6R-022-client",
+          "kind": "message",
+          "occurred_at": "2026-02-04T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:49:55.004074+00:00",
+          "text": "家人愿意一起出钱，所以预算这次能到6000。我还是想问Transit能不能优惠，不是让我重新选。"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:49:24.061976+00:00",
+          "effective_at": "2026-02-04T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "f8b3fa575d3c45839aba1b95f5f1d94e",
+          "key": "budget",
+          "kind": "fact",
+          "owner_id": "v5-person-05",
+          "provenance": "explicit",
+          "revision": 2,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "V6R-022-client",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:49:55.006572+00:00",
+          "value": "预算这次能到6000"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:49:24.064544+00:00",
+          "effective_at": "2026-02-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "ae3af67711e34bd092bbad6e62659026",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-05",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "V6R-021-client",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:49:24.064554+00:00",
+          "value": "装手机、证件"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:49:24.054125+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "180f84d0933e4b6fbfa1eb6d1ad95865",
+          "key": "color",
+          "kind": "fact",
+          "owner_id": "v5-person-05",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-05-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:49:24.054136+00:00",
+          "value": "我想看黑色小包"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:49:24.056708+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "e6ee75fdfac54460896b7ac64e3d6d2d",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-05",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-05-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:49:24.056718+00:00",
+          "value": "allowed"
+        }
+      ],
+      "products": [
+        {
+          "capacity": "手机、短钱包、证件与钥匙；不能装电脑或长伞。",
+          "care": "表面局部轻拭；不机洗，不浸泡，不使用酒精。",
+          "carry": "斜挎或肩背。",
+          "catalog_version": "virel-catalog-3",
+          "collection": "TRANSIT",
+          "colors": [
+            "墨黑"
+          ],
+          "construction": "织物主体、皮革包角与双向拉链；可调织物肩带。没有 Pont 横桥扣。",
+          "design_notes": [
+            {
+              "detail": "高密织物构成主体，皮革包角沿底部转折延伸，形成与箱匣相通的轮廓。没有外置横桥扣，皮革只用于包角等局部。",
+              "title": "把皮革放在轮廓上"
+            },
+            {
+              "detail": "主空间之外保留贴身一侧的内部证件袋，双向拉链让取用不必从同一侧开始；证件袋不是RFID屏蔽袋。",
+              "title": "给证件一处独立位置"
+            },
+            {
+              "detail": "约350克，比Pont26轻260克；可调织物肩带适合肩背或斜挎。它仍是小型随身包，不能放电脑、长伞，也没有防水认证。",
+              "title": "把重量留给随身物"
+            }
+          ],
+          "dimensions_cm": [
+            23,
+            16,
+            7
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "希望减轻包本身的重量，带手机、短钱包、证件与钥匙出行。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "有没有电脑、长伞或防水要求；织物与皮革的组合是否符合触感偏好。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "transit.png"
+            }
+          ],
+          "id": "TRANSIT",
+          "image": "transit.png",
+          "limits": [
+            "不是防水包。",
+            "当前标价5200元，本期无折扣，不能以5000元成交。"
+          ],
+          "material": "高密织物配小牛皮，棉质内衬",
+          "name": "Transit 轻行斜挎包",
+          "price_cny": 5200,
+          "subtitle": "把重量留给随身物",
+          "value_story": "织物主体与皮革包角留下轻巧的箱匣轮廓。证件和随身物分开放，约350克的重量适合轻装出行；与皮革Pont相比，重点转向取用与携带。",
+          "weight_g": 350
+        }
+      ],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": null,
+      "case_id": "V6R-022",
+      "source_run_id": "98d83574a0be4b26873b2da4a005dd55",
+      "source_sha256": "e3203ad44d326754f1cf8283915a1c8b534fcc6264cd7261fb51a2fe0a26d4cb",
+      "scenario": "price",
+      "candidates": [
+        {
+          "id": "c",
+          "text": "Transit目前不能优惠，售价是5200元，这期按标价销售。"
+        },
+        {
+          "id": "b",
+          "text": "宛宛，明白，你还是想选Transit。这款目前是5200元，本期没有折扣，价格不能再降。"
+        },
+        {
+          "id": "a",
+          "text": "宛宛，不好意思，Transit这期没有优惠，目前售价是5200元。"
+        }
+      ],
+      "generated_scenario": "price"
+    },
+    {
+      "as_of": "2026-02-07T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-01",
+        "name": "顾澄",
+        "salutation": "阿澄"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "v5-person-01-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:44:37.284824+00:00",
+          "text": "叫我阿澄。我喜欢绿色，平时带手机、短钱包和折叠伞。可以发和这些需求相关的信息。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-001-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:44:37.298712+00:00",
+          "text": "想买一只周末一直背的小包，东西就是之前说的那些，20和26怎么选？"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-002-client",
+          "kind": "message",
+          "occurred_at": "2026-02-04T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:45:20.007400+00:00",
+          "text": "26是8800吧？两只一起买能不能给点折扣？不用给我换便宜款。"
+        },
+        {
+          "actor": "system",
+          "customer_id": "v5-person-01",
+          "data": {
+            "product_id": "PONT26"
+          },
+          "id": "V6R-003-prior-0",
+          "kind": "purchase",
+          "occurred_at": "2026-02-07T01:50:00+00:00",
+          "recorded_at": "2026-11-07T17:45:44.411137+00:00",
+          "text": "已购买深杉绿Pont 26并交付。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-003-client",
+          "kind": "message",
+          "occurred_at": "2026-02-07T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:45:44.412972+00:00",
+          "text": "昨天买的26肩带有点长，我想调短一格，应该怎么动那个扣？"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.292919+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "d714889cf7a443eb9668f42620fd3d4b",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.292929+00:00",
+          "value": "平时带手机、短钱包和折叠伞"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.289168+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "51ff7714a616480282fa81ea916696c5",
+          "key": "color",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.289178+00:00",
+          "value": "我喜欢绿色"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.296809+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "1bde987b4e5845b8b931bf12c15333a7",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.296820+00:00",
+          "value": "allowed"
+        }
+      ],
+      "products": [
+        {
+          "capacity": "手机、短钱包、钥匙和小型折叠伞；不能装13英寸电脑或A4文件。",
+          "care": "轻微浮灰用柔软干布轻拭；淋雨后吸去表面水分，在阴凉通风处自然晾干；不使用酒精、不烘干、不浸水。",
+          "carry": "可调节可拆卸肩带，肩背或斜挎。",
+          "catalog_version": "virel-catalog-3",
+          "collection": "PONT",
+          "colors": [
+            "深杉绿",
+            "墨黑"
+          ],
+          "construction": "前片折返形成浅立体口袋；包口采用哑光黄铜色横桥扣，两端圆头铆钉；边缘分层涂覆并打磨。结构缝线为机器缝制，边缘与金属装配由手工完成，不称全手缝。",
+          "design_notes": [
+            {
+              "detail": "翻盖下的浅立体前袋与主空间分开，方便把卡夹或薄票据从其余随身物里分出来；前袋仍需打开翻盖取用。",
+              "title": "把常用物放在前面"
+            },
+            {
+              "detail": "低矮横桥贴近包面，两端圆头铆钉与圆角侧片呼应。它提供固定的开合位置；不是防盗锁，也不是贵金属首饰。",
+              "title": "扣件也是轮廓的一部分"
+            },
+            {
+              "detail": "平底与围合侧片支撑轮廓，让包放下后保持形状。约610克自重、固定体积，是这份结构感的取舍；它不适合卷收或携带电脑。",
+              "title": "让包保持站立的形状"
+            }
+          ],
+          "dimensions_cm": [
+            26,
+            18,
+            9
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "手机、短钱包、钥匙与小型折叠伞；想把常用小物和主空间分开。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "折叠伞的实际长度与厚度、装满后的重量及肩带长度。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "pont26.png"
+            },
+            {
+              "caption": "同一横桥，两种尺度",
+              "image": "bridge-family-v6.png"
+            }
+          ],
+          "id": "PONT26",
+          "image": "pont26.png",
+          "limits": [
+            "金属扣并非贵金属；重量约610克，不属于超轻包。",
+            "不具备防水或防盗认证。"
+          ],
+          "material": "细粒面小牛皮，棉麻混纺内衬",
+          "name": "Pont 26 桥扣肩包",
+          "price_cny": 8800,
+          "subtitle": "箱匣的秩序，落在日常尺度",
+          "use_guide": "肩带通过针扣与五个孔位调节。调短时先把包放稳、让肩带不受力，打开针扣，将扣针移到更靠近包身的孔位，扣好后把带尾穿回皮圈。试背确认长度；若扣针卡住或实物结构与说明不符，停止硬拉并联系顾问确认。",
+          "value_story": "2018年 Pont 系列把工坊箱匣的横桥扣缩小为日常开合。两端铆钉和低矮扣件让包面保持平整，结构感来自扣和折边，而不是大面积标识。",
+          "weight_g": 610
+        }
+      ],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": null,
+      "case_id": "V6R-003",
+      "source_run_id": "d938a7641dcc47529981a49f7ca44d9b",
+      "source_sha256": "712e55179e112ca527106528c58354f9646fccb775f734e5f2b728fafc812e08",
+      "scenario": "care",
+      "candidates": [
+        {
+          "id": "b",
+          "text": "调短一格，就是把肩带扣针移到更靠近包身的相邻孔位。操作前先放稳包、让肩带放松，再打开针扣换孔，扣好并把带尾穿回皮圈，最后试背确认长度。如果扣针卡住或结构对不上，先别硬拉，找我确认。"
+        },
+        {
+          "id": "c",
+          "text": "阿澄，26的肩带是用针扣调节的。先把包放稳，让肩带不受力，打开针扣后往靠近包身的方向换一个孔，扣好，再将带尾穿回皮圈试背。遇到卡住或实物结构和说明不符，先停下来联系我，不要硬拉。"
+        },
+        {
+          "id": "a",
+          "text": "阿澄，先把包放稳，让肩带不受力，再打开肩带针扣，把扣针移到更靠近包身的下一个孔位。扣好后把带尾穿回皮圈，再试背一下；如果扣针卡住，或扣的结构和说明不一样，就先停下，别硬拉，联系我确认。"
+        }
+      ],
+      "generated_scenario": "care"
+    },
+    {
+      "as_of": "2026-11-10T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-02",
+        "name": "高以安",
+        "salutation": "以安"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-02",
+          "data": {},
+          "id": "v5-person-02-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:44:37.286075+00:00",
+          "text": "我出门带手机和证件，喜欢黑色，最在意包轻。上新或活动里真有适合我的，可以告诉我。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-02",
+          "data": {},
+          "id": "V6R-006-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:44:37.305692+00:00",
+          "text": "Transit和26哪只更适合我通勤路上用？不需要装电脑。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-02",
+          "data": {},
+          "id": "V6R-007-client",
+          "kind": "message",
+          "occurred_at": "2026-02-04T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:45:10.312554+00:00",
+          "text": "5200不用便宜，我想确认织物是不是就随便做做，贵在哪里？"
+        },
+        {
+          "actor": "system",
+          "customer_id": "v5-person-02",
+          "data": {
+            "product_id": "TRANSIT"
+          },
+          "id": "V6R-008-prior-0",
+          "kind": "purchase",
+          "occurred_at": "2026-02-07T01:50:00+00:00",
+          "recorded_at": "2026-11-07T17:45:45.251832+00:00",
+          "text": "墨黑Transit已购买交付。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-02",
+          "data": {},
+          "id": "V6R-008-client",
+          "kind": "message",
+          "occurred_at": "2026-02-07T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:45:45.253604+00:00",
+          "text": "买了这只黑色Transit后包角蹭脏了，整只丢洗衣机轻柔洗行不行？"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-02",
+          "data": {},
+          "id": "V6R-009-client",
+          "kind": "message",
+          "occurred_at": "2026-11-07T03:00:00+00:00",
+          "recorded_at": "2026-11-07T17:46:23.564845+00:00",
+          "text": "最近要出差，我想换一只旅行用的包。11月10日上午你再联系我，接着按轻和黑色给我说说。"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.294793+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "36b2c45fb7344fe6910b2c2f117f68f5",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-02",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-02-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.294803+00:00",
+          "value": "我出门带手机和证件"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.291035+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "4b247b50ddd7439795559542aa66e731",
+          "key": "color",
+          "kind": "fact",
+          "owner_id": "v5-person-02",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-02-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.291045+00:00",
+          "value": "喜欢黑色"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.302140+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "f2682e4321da4f53984f1b3a05c86e2b",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-02",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-02-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.302151+00:00",
+          "value": "allowed"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.298491+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "0f4321716c074a4b974671588b5b5502",
+          "key": "interest",
+          "kind": "fact",
+          "owner_id": "v5-person-02",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-02-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.298500+00:00",
+          "value": "最在意包轻"
+        }
+      ],
+      "products": [
+        {
+          "capacity": "手机、短钱包、证件与钥匙；不能装电脑或长伞。",
+          "care": "表面局部轻拭；不机洗，不浸泡，不使用酒精。",
+          "carry": "斜挎或肩背。",
+          "catalog_version": "virel-catalog-3",
+          "collection": "TRANSIT",
+          "colors": [
+            "墨黑"
+          ],
+          "construction": "织物主体、皮革包角与双向拉链；可调织物肩带。没有 Pont 横桥扣。",
+          "design_notes": [
+            {
+              "detail": "高密织物构成主体，皮革包角沿底部转折延伸，形成与箱匣相通的轮廓。没有外置横桥扣，皮革只用于包角等局部。",
+              "title": "把皮革放在轮廓上"
+            },
+            {
+              "detail": "主空间之外保留贴身一侧的内部证件袋，双向拉链让取用不必从同一侧开始；证件袋不是RFID屏蔽袋。",
+              "title": "给证件一处独立位置"
+            },
+            {
+              "detail": "约350克，比Pont26轻260克；可调织物肩带适合肩背或斜挎。它仍是小型随身包，不能放电脑、长伞，也没有防水认证。",
+              "title": "把重量留给随身物"
+            }
+          ],
+          "dimensions_cm": [
+            23,
+            16,
+            7
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "希望减轻包本身的重量，带手机、短钱包、证件与钥匙出行。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "有没有电脑、长伞或防水要求；织物与皮革的组合是否符合触感偏好。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "transit.png"
+            }
+          ],
+          "id": "TRANSIT",
+          "image": "transit.png",
+          "limits": [
+            "不是防水包。",
+            "当前标价5200元，本期无折扣，不能以5000元成交。"
+          ],
+          "material": "高密织物配小牛皮，棉质内衬",
+          "name": "Transit 轻行斜挎包",
+          "price_cny": 5200,
+          "subtitle": "把重量留给随身物",
+          "value_story": "织物主体与皮革包角留下轻巧的箱匣轮廓。证件和随身物分开放，约350克的重量适合轻装出行；与皮革Pont相比，重点转向取用与携带。",
+          "weight_g": 350
+        },
+        {
+          "capacity": "手机、短钱包、钥匙和小型折叠伞；不能装13英寸电脑或A4文件。",
+          "care": "轻微浮灰用柔软干布轻拭；淋雨后吸去表面水分，在阴凉通风处自然晾干；不使用酒精、不烘干、不浸水。",
+          "carry": "可调节可拆卸肩带，肩背或斜挎。",
+          "catalog_version": "virel-catalog-3",
+          "collection": "PONT",
+          "colors": [
+            "深杉绿",
+            "墨黑"
+          ],
+          "construction": "前片折返形成浅立体口袋；包口采用哑光黄铜色横桥扣，两端圆头铆钉；边缘分层涂覆并打磨。结构缝线为机器缝制，边缘与金属装配由手工完成，不称全手缝。",
+          "design_notes": [
+            {
+              "detail": "翻盖下的浅立体前袋与主空间分开，方便把卡夹或薄票据从其余随身物里分出来；前袋仍需打开翻盖取用。",
+              "title": "把常用物放在前面"
+            },
+            {
+              "detail": "低矮横桥贴近包面，两端圆头铆钉与圆角侧片呼应。它提供固定的开合位置；不是防盗锁，也不是贵金属首饰。",
+              "title": "扣件也是轮廓的一部分"
+            },
+            {
+              "detail": "平底与围合侧片支撑轮廓，让包放下后保持形状。约610克自重、固定体积，是这份结构感的取舍；它不适合卷收或携带电脑。",
+              "title": "让包保持站立的形状"
+            }
+          ],
+          "dimensions_cm": [
+            26,
+            18,
+            9
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "手机、短钱包、钥匙与小型折叠伞；想把常用小物和主空间分开。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "折叠伞的实际长度与厚度、装满后的重量及肩带长度。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "pont26.png"
+            },
+            {
+              "caption": "同一横桥，两种尺度",
+              "image": "bridge-family-v6.png"
+            }
+          ],
+          "id": "PONT26",
+          "image": "pont26.png",
+          "limits": [
+            "金属扣并非贵金属；重量约610克，不属于超轻包。",
+            "不具备防水或防盗认证。"
+          ],
+          "material": "细粒面小牛皮，棉麻混纺内衬",
+          "name": "Pont 26 桥扣肩包",
+          "price_cny": 8800,
+          "subtitle": "箱匣的秩序，落在日常尺度",
+          "use_guide": "肩带通过针扣与五个孔位调节。调短时先把包放稳、让肩带不受力，打开针扣，将扣针移到更靠近包身的孔位，扣好后把带尾穿回皮圈。试背确认长度；若扣针卡住或实物结构与说明不符，停止硬拉并联系顾问确认。",
+          "value_story": "2018年 Pont 系列把工坊箱匣的横桥扣缩小为日常开合。两端铆钉和低矮扣件让包面保持平整，结构感来自扣和折边，而不是大面积标识。",
+          "weight_g": 610
+        }
+      ],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": null,
+      "case_id": "V6R-009",
+      "source_run_id": "a4edeccc3f724320a7b242a31ec42803",
+      "source_sha256": "ed9b774a6587e7fa358d28519bba9d06260e0632929ec1c51f1477e35850b0b7",
+      "scenario": "reactivation",
+      "candidates": [
+        {
+          "id": "b",
+          "text": "以安，今天按约接着帮你看黑色、轻一点的出差用包。你现在的Transit是约350克的小型随身包，不能装电脑；这次除了手机和证件，还需要带哪些东西？"
+        },
+        {
+          "id": "a",
+          "text": "以安，按约好的时间来接着说出差用包。你已有的墨黑Transit约350克，Pont 26约610克，换它不会更轻。这次想换的还是装手机、证件的随身小包，还是需要放电脑、衣物的旅行包？"
+        },
+        {
+          "id": "c",
+          "text": "以安，按约来接着说旅行用包，还是按轻、黑色来选。Pont 26有墨黑色，但比你已有的Transit重约260克，不能装13英寸电脑。这次换包，主要想比现在多装些什么？"
+        }
+      ],
+      "generated_scenario": "reactivation"
+    },
+    {
+      "as_of": "2026-11-13T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-01",
+        "name": "顾澄",
+        "salutation": "阿澄"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "v5-person-01-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:44:37.284824+00:00",
+          "text": "叫我阿澄。我喜欢绿色，平时带手机、短钱包和折叠伞。可以发和这些需求相关的信息。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-001-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:44:37.298712+00:00",
+          "text": "想买一只周末一直背的小包，东西就是之前说的那些，20和26怎么选？"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-002-client",
+          "kind": "message",
+          "occurred_at": "2026-02-04T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:45:20.007400+00:00",
+          "text": "26是8800吧？两只一起买能不能给点折扣？不用给我换便宜款。"
+        },
+        {
+          "actor": "system",
+          "customer_id": "v5-person-01",
+          "data": {
+            "product_id": "PONT26"
+          },
+          "id": "V6R-003-prior-0",
+          "kind": "purchase",
+          "occurred_at": "2026-02-07T01:50:00+00:00",
+          "recorded_at": "2026-11-07T17:45:44.411137+00:00",
+          "text": "已购买深杉绿Pont 26并交付。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-003-client",
+          "kind": "message",
+          "occurred_at": "2026-02-07T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:45:44.412972+00:00",
+          "text": "昨天买的26肩带有点长，我想调短一格，应该怎么动那个扣？"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-004-client",
+          "kind": "message",
+          "occurred_at": "2026-11-10T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:46:20.260554+00:00",
+          "text": "今天生日，晚上和朋友吃饭。包刚好可以背上，你简单祝福我一句就好。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-01",
+          "data": {},
+          "id": "V6R-005-client",
+          "kind": "message",
+          "occurred_at": "2026-11-13T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:46:50.551268+00:00",
+          "text": "明天下午你们那个工坊活动能带一位朋友一起吗？我们只想看扣件，不一定试包。"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.292919+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "d714889cf7a443eb9668f42620fd3d4b",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.292929+00:00",
+          "value": "平时带手机、短钱包和折叠伞"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.289168+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "51ff7714a616480282fa81ea916696c5",
+          "key": "color",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.289178+00:00",
+          "value": "我喜欢绿色"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:44:37.296809+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "1bde987b4e5845b8b931bf12c15333a7",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-01",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-01-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:44:37.296820+00:00",
+          "value": "allowed"
+        }
+      ],
+      "products": [
+        {
+          "capacity": "手机、短钱包、钥匙和小型折叠伞；不能装13英寸电脑或A4文件。",
+          "care": "轻微浮灰用柔软干布轻拭；淋雨后吸去表面水分，在阴凉通风处自然晾干；不使用酒精、不烘干、不浸水。",
+          "carry": "可调节可拆卸肩带，肩背或斜挎。",
+          "catalog_version": "virel-catalog-3",
+          "collection": "PONT",
+          "colors": [
+            "深杉绿",
+            "墨黑"
+          ],
+          "construction": "前片折返形成浅立体口袋；包口采用哑光黄铜色横桥扣，两端圆头铆钉；边缘分层涂覆并打磨。结构缝线为机器缝制，边缘与金属装配由手工完成，不称全手缝。",
+          "design_notes": [
+            {
+              "detail": "翻盖下的浅立体前袋与主空间分开，方便把卡夹或薄票据从其余随身物里分出来；前袋仍需打开翻盖取用。",
+              "title": "把常用物放在前面"
+            },
+            {
+              "detail": "低矮横桥贴近包面，两端圆头铆钉与圆角侧片呼应。它提供固定的开合位置；不是防盗锁，也不是贵金属首饰。",
+              "title": "扣件也是轮廓的一部分"
+            },
+            {
+              "detail": "平底与围合侧片支撑轮廓，让包放下后保持形状。约610克自重、固定体积，是这份结构感的取舍；它不适合卷收或携带电脑。",
+              "title": "让包保持站立的形状"
+            }
+          ],
+          "dimensions_cm": [
+            26,
+            18,
+            9
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "手机、短钱包、钥匙与小型折叠伞；想把常用小物和主空间分开。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "折叠伞的实际长度与厚度、装满后的重量及肩带长度。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "pont26.png"
+            },
+            {
+              "caption": "同一横桥，两种尺度",
+              "image": "bridge-family-v6.png"
+            }
+          ],
+          "id": "PONT26",
+          "image": "pont26.png",
+          "limits": [
+            "金属扣并非贵金属；重量约610克，不属于超轻包。",
+            "不具备防水或防盗认证。"
+          ],
+          "material": "细粒面小牛皮，棉麻混纺内衬",
+          "name": "Pont 26 桥扣肩包",
+          "price_cny": 8800,
+          "subtitle": "箱匣的秩序，落在日常尺度",
+          "use_guide": "肩带通过针扣与五个孔位调节。调短时先把包放稳、让肩带不受力，打开针扣，将扣针移到更靠近包身的孔位，扣好后把带尾穿回皮圈。试背确认长度；若扣针卡住或实物结构与说明不符，停止硬拉并联系顾问确认。",
+          "value_story": "2018年 Pont 系列把工坊箱匣的横桥扣缩小为日常开合。两端铆钉和低矮扣件让包面保持平整，结构感来自扣和折边，而不是大面积标识。",
+          "weight_g": 610
+        }
+      ],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": {
+        "access": "免费预约，没有购买义务；每组30分钟，每组合计最多2人（包含客户本人，即客户最多携带1位同行者）。三人不能同组；多人分组的时段和安排须另向沙龙确认。具体时段由沙龙确认，尚未替任何客户留位。",
+        "content": "金属横桥扣拆解示范、皮革包边现场演示、可自愿参加的Pont系列试背。可以只看工艺；不是维修现场，不承诺即时修好商品。",
+        "ends_at": "2026-11-14T17:00:00+08:00",
+        "fictional": true,
+        "id": "bridge-preview",
+        "location": "上海衡山路 VIREL 沙龙（虚构地点）",
+        "name": "桥扣与皮革 · 工坊近赏",
+        "starts_at": "2026-11-14T14:00:00+08:00"
+      },
+      "case_id": "V6R-005",
+      "source_run_id": "541a1704f55f4e00b0b96309aea4c62f",
+      "source_sha256": "a497f1037911e71ede02f7702b6f02f2aa72381fbb180bc100e4f880e061b963",
+      "scenario": "invitation",
+      "candidates": [
+        {
+          "id": "b",
+          "text": "可以带一位朋友一起，你们只看扣件示范、不试包也没问题，活动免费，没有购买义务。明天下午2点到5点，每组体验30分钟。告诉我你们方便的时间，我帮你们问一下可预约的时段。"
+        },
+        {
+          "id": "c",
+          "text": "可以，你和朋友两个人符合每组人数要求，只看横桥扣拆解就好，试包自愿，也不需要购买。预约免费，每组30分钟；你们明天下午2点到5点之间哪个时间方便？具体时段还要请沙龙确认。"
+        },
+        {
+          "id": "a",
+          "text": "可以的，阿澄，你和一位朋友正好一组；只看横桥扣拆解示范也可以，不用试包，也没有购买义务。明天下午2点到5点，每组30分钟，预约免费。你们想几点来？我再向沙龙确认时段。"
+        }
+      ],
+      "generated_scenario": "invitation"
+    },
+    {
+      "as_of": "2026-02-01T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-08",
+        "name": "陆遥",
+        "salutation": "遥遥"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-08",
+          "data": {},
+          "id": "v5-person-08-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:52:17.441503+00:00",
+          "text": "我喜欢白色的小包，只装手机和卡。你叫我遥遥就好，相关消息可以发给我。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-08",
+          "data": {},
+          "id": "V6R-036-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:52:17.450819+00:00",
+          "text": "今天生日，但试背先别安排，等我下周自己联系你。"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:52:17.446487+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "72131179ea9d4ea280c1b47147c8f315",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-08",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-08-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:52:17.446497+00:00",
+          "value": "只装手机和卡"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:52:17.444054+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "eef56f82949e484bb70fe6b509fe81ee",
+          "key": "color",
+          "kind": "fact",
+          "owner_id": "v5-person-08",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-08-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:52:17.444064+00:00",
+          "value": "我喜欢白色的小包"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:52:17.448891+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "776115bfc28642aab0f0963e69e36570",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-08",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-08-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:52:17.448901+00:00",
+          "value": "allowed"
+        }
+      ],
+      "products": [],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": null,
+      "case_id": "V6R-036",
+      "source_run_id": "7b13d4697b36441c9cc913899babe8a4",
+      "source_sha256": "68f2ddb911cce0390c1b4a59abefce6df79c698e2c1690de912f161532a89f57",
+      "scenario": "greeting",
+      "candidates": [
+        {
+          "id": "c",
+          "text": "生日快乐，遥遥！那我们等你下周联系时再说试背的事，今天先不安排。"
+        },
+        {
+          "id": "a",
+          "text": "遥遥，生日快乐！试背先不安排，等你下周联系我。"
+        },
+        {
+          "id": "b",
+          "text": "好的，遥遥，试背先不安排，等你下周来找我。祝你生日快乐！"
+        }
+      ],
+      "generated_scenario": "greeting"
+    },
+    {
+      "as_of": "2026-02-01T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-07",
+        "name": "黎庭",
+        "salutation": "小黎"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-07",
+          "data": {},
+          "id": "v5-person-07-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:51:38.669074+00:00",
+          "text": "准备给弟弟买毕业礼物，他喜欢绿色，平时用卡多。他的喜好和我不同，这次按他来。相关消息可以告诉我。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-07",
+          "data": {},
+          "id": "V6R-031-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:51:38.681607+00:00",
+          "text": "给弟弟的礼物在卡夹和钥匙包之间选，你帮我挑一个更对路的。"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:51:38.676795+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "9b06fe19f11a417fa62204c5f9bc374c",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-07",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-07-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:51:38.676805+00:00",
+          "value": "平时用卡多"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:51:38.674216+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "d06025c00c46474599474931632b099e",
+          "key": "color",
+          "kind": "fact",
+          "owner_id": "v5-person-07",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-07-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:51:38.674226+00:00",
+          "value": "他喜欢绿色"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:51:38.679482+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "331d03df65c34dfcbac5a03783471d48",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-07",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-07-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:51:38.679492+00:00",
+          "value": "allowed"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:51:38.671640+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "e4ec53bd3e7847a88d2edc7e0891c325",
+          "key": "gift_recipient",
+          "kind": "fact",
+          "owner_id": "v5-person-07",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-07-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:51:38.671650+00:00",
+          "value": "准备给弟弟买毕业礼物"
+        }
+      ],
+      "products": [
+        {
+          "capacity": "六张卡与少量折叠纸币；无硬币层。",
+          "care": "干布轻拭，避免过量塞卡和酒精。",
+          "carry": "衣袋或包内。",
+          "catalog_version": "virel-catalog-3",
+          "collection": "ETUI",
+          "colors": [
+            "深杉绿",
+            "石灰白"
+          ],
+          "construction": "两侧各三个卡位与中间夹层；侧边一体折返，卡槽开口切成轻微弧线方便取用。",
+          "design_notes": [
+            {
+              "detail": "一侧边缘由皮革折返连接，两面各三个略带弧线的卡槽；弧线留出手指接触卡片的位置。中间夹层仅用于少量折叠纸币。",
+              "title": "一折与六个开口"
+            },
+            {
+              "detail": "约55克，适合六张常用卡与少量折叠纸币。没有硬币层；过量塞卡会改变厚度与形状。需要RFID屏蔽时，应另选相应产品。",
+              "title": "轻薄，也有明确容量"
+            }
+          ],
+          "dimensions_cm": [
+            10.5,
+            8,
+            1
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "主要用六张卡，偶尔带少量纸币，不需要硬币层。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "是否实际常带更多卡、硬币或需要RFID屏蔽。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "passage-v2.png"
+            }
+          ],
+          "id": "PASSAGE",
+          "image": "passage-v2.png",
+          "limits": [
+            "不具备RFID屏蔽功能。"
+          ],
+          "material": "粒面小牛皮",
+          "name": "Passage 六卡位卡夹",
+          "price_cny": 1800,
+          "subtitle": "保留一条完整的皮革折边",
+          "value_story": "一条完整折边连接两面皮革，六个弧形卡槽留出取卡的位置。与Etui共享包覆边缘的做法，把设计收进约55克的日常随身物。",
+          "weight_g": 55
+        },
+        {
+          "capacity": "四把普通家门钥匙；不适合较厚车钥匙和门禁遥控器，无硬币层。",
+          "care": "干布轻拭；避免潮湿，不硬塞过厚钥匙；挂钩松动时交沙龙检测。",
+          "carry": "放入包内或衣袋，隔开钥匙与其他随身物。",
+          "catalog_version": "virel-catalog-3",
+          "claims_policy": [
+            "没有名人同款、限量收藏、保值或升值的依据，不得宣称。"
+          ],
+          "collection": "ETUI",
+          "colors": [
+            "深杉绿",
+            "咖啡棕"
+          ],
+          "construction": "四枚独立可更换钥匙挂钩固定在横桥形金属底座上；包边折入后缝合，闭合处为一组低矮按扣（两侧各一枚组件），正面无大logo。",
+          "design_detail": "打开后桥形底座横跨浅色内里，四枚独立挂钩沿桥排列；闭合后只露皮革折边和按扣正面。与Pont包袋的外置桥扣形成内外呼应。",
+          "design_notes": [
+            {
+              "detail": "四枚挂钩沿一块横桥形金属底座排列，桥两端的圆头铆钉与Pont正面扣件一致。桥在肩包外侧负责开合，在钥匙包内侧组织挂钩。",
+              "title": "打开能看到的共同设计"
+            },
+            {
+              "detail": "外皮边缘向内折返，再与内里缝合，闭合后首先看到皮革折边和低矮按扣；内外两层皮革包覆四把普通钥匙。不是四个裸挂钩直接外露。",
+              "title": "把边缘折进去"
+            },
+            {
+              "detail": "每枚挂钩可单独交工坊检测更换。四把普通家门钥匙是设计容量；车钥匙盒、遥控器和硬币需要其他收纳方式。能否维修、价格和时间须检测后确认。",
+              "title": "为日常钥匙保留的尺度"
+            }
+          ],
+          "dimensions_cm": [
+            10.5,
+            6.5,
+            2
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "带四把普通家门钥匙，希望合起来收进衣袋或包里；在意小皮具与包袋的设计关联。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "是否带较厚的车钥匙、遥控器或超过四把钥匙。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "etui04.png"
+            },
+            {
+              "caption": "折边与横桥",
+              "image": "etui-detail-v6.png"
+            },
+            {
+              "caption": "同一横桥，两种尺度",
+              "image": "bridge-family-v6.png"
+            }
+          ],
+          "id": "ETUI04",
+          "image": "etui04.png",
+          "limits": [
+            "配件不是贵金属。",
+            "四把普通家门钥匙的设计容量；较厚车钥匙和遥控器不适用。"
+          ],
+          "material": "细粒面小牛皮，光面牛皮内里",
+          "name": "Etui 04 四扣钥匙包",
+          "price_cny": 2200,
+          "subtitle": "一件可以打开看的小型箱匣",
+          "value_story": "箱匣工坊习惯先安排内部分隔，再考虑外形。Etui 04把这件事缩到掌心：打开后，桥形金属底座和浅色皮革内里一目了然；合上后，双层皮革把钥匙与随身物隔开。桥形构件与Pont包袋相呼应，价值在于完整的小型皮具设计，不仅是四个挂钩。",
+          "weight_g": 92
+        }
+      ],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": null,
+      "case_id": "V6R-031",
+      "source_run_id": "d837fc55198d44efb0a3cf6453be07d8",
+      "source_sha256": "a7474cf7da8dc4682c82f603926c6f39537f139ab9cffcb2c3b174fbc7f3bfab",
+      "scenario": "recommendation",
+      "candidates": [
+        {
+          "id": "a",
+          "text": "小黎，我更推荐深杉绿的Passage卡夹：弟弟喜欢绿色，平时又用卡多，比起钥匙包，卡夹更贴合他的日常。它能放六张卡，卡槽的弧形开口也方便取卡，留意一下他常带的卡是否超过六张就好。"
+        },
+        {
+          "id": "c",
+          "text": "我会偏向深杉绿的Passage卡夹，颜色合弟弟的喜好，也照顾到他用卡多的习惯。两面各三个卡位，开口留了弧线，手指取卡更方便；适合从常用卡里选六张随身带。"
+        },
+        {
+          "id": "b",
+          "text": "这份毕业礼物，我会选深杉绿Passage卡夹。两款都有他喜欢的绿色，但他平时用卡多，六个独立卡位更对路；如果常带超过六张卡，这款的容量就需要再斟酌。"
+        }
+      ],
+      "generated_scenario": "recommendation"
+    },
+    {
+      "as_of": "2026-02-04T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-06",
+        "name": "邵宁",
+        "salutation": "宁姐"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-06",
+          "data": {},
+          "id": "v5-person-06-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:49:54.224493+00:00",
+          "text": "我每天带四把普通家门钥匙，不带车钥匙。喜欢小东西也有完整设计，有合适内容可以联系我。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-06",
+          "data": {},
+          "id": "V6R-026-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:49:54.234266+00:00",
+          "text": "今天生日，刚吃完蛋糕。你不用想什么特别的话，正常祝福就好。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-06",
+          "data": {},
+          "id": "V6R-027-client",
+          "kind": "message",
+          "occurred_at": "2026-02-04T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:50:13.004737+00:00",
+          "text": "钥匙包2200总不能只因为挂四把钥匙吧？别念一大段历史，给我说一个能看到的设计理由。"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:49:54.226927+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "ecc4ac2ad92143e6be33a80d436c0158",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-06",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-06-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:49:54.226936+00:00",
+          "value": "我每天带四把普通家门钥匙，不带车钥匙"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:49:54.232290+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "04c2de2dd1f448568dff0909f937e745",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-06",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-06-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:49:54.232300+00:00",
+          "value": "allowed"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:49:54.229635+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "1ce3d9694367405481aaa44407a30b9f",
+          "key": "interest",
+          "kind": "fact",
+          "owner_id": "v5-person-06",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-06-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:49:54.229645+00:00",
+          "value": "喜欢小东西也有完整设计"
+        }
+      ],
+      "products": [
+        {
+          "capacity": "四把普通家门钥匙；不适合较厚车钥匙和门禁遥控器，无硬币层。",
+          "care": "干布轻拭；避免潮湿，不硬塞过厚钥匙；挂钩松动时交沙龙检测。",
+          "carry": "放入包内或衣袋，隔开钥匙与其他随身物。",
+          "catalog_version": "virel-catalog-3",
+          "claims_policy": [
+            "没有名人同款、限量收藏、保值或升值的依据，不得宣称。"
+          ],
+          "collection": "ETUI",
+          "colors": [
+            "深杉绿",
+            "咖啡棕"
+          ],
+          "construction": "四枚独立可更换钥匙挂钩固定在横桥形金属底座上；包边折入后缝合，闭合处为一组低矮按扣（两侧各一枚组件），正面无大logo。",
+          "design_detail": "打开后桥形底座横跨浅色内里，四枚独立挂钩沿桥排列；闭合后只露皮革折边和按扣正面。与Pont包袋的外置桥扣形成内外呼应。",
+          "design_notes": [
+            {
+              "detail": "四枚挂钩沿一块横桥形金属底座排列，桥两端的圆头铆钉与Pont正面扣件一致。桥在肩包外侧负责开合，在钥匙包内侧组织挂钩。",
+              "title": "打开能看到的共同设计"
+            },
+            {
+              "detail": "外皮边缘向内折返，再与内里缝合，闭合后首先看到皮革折边和低矮按扣；内外两层皮革包覆四把普通钥匙。不是四个裸挂钩直接外露。",
+              "title": "把边缘折进去"
+            },
+            {
+              "detail": "每枚挂钩可单独交工坊检测更换。四把普通家门钥匙是设计容量；车钥匙盒、遥控器和硬币需要其他收纳方式。能否维修、价格和时间须检测后确认。",
+              "title": "为日常钥匙保留的尺度"
+            }
+          ],
+          "dimensions_cm": [
+            10.5,
+            6.5,
+            2
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "带四把普通家门钥匙，希望合起来收进衣袋或包里；在意小皮具与包袋的设计关联。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "是否带较厚的车钥匙、遥控器或超过四把钥匙。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "etui04.png"
+            },
+            {
+              "caption": "折边与横桥",
+              "image": "etui-detail-v6.png"
+            },
+            {
+              "caption": "同一横桥，两种尺度",
+              "image": "bridge-family-v6.png"
+            }
+          ],
+          "id": "ETUI04",
+          "image": "etui04.png",
+          "limits": [
+            "配件不是贵金属。",
+            "四把普通家门钥匙的设计容量；较厚车钥匙和遥控器不适用。"
+          ],
+          "material": "细粒面小牛皮，光面牛皮内里",
+          "name": "Etui 04 四扣钥匙包",
+          "price_cny": 2200,
+          "subtitle": "一件可以打开看的小型箱匣",
+          "value_story": "箱匣工坊习惯先安排内部分隔，再考虑外形。Etui 04把这件事缩到掌心：打开后，桥形金属底座和浅色皮革内里一目了然；合上后，双层皮革把钥匙与随身物隔开。桥形构件与Pont包袋相呼应，价值在于完整的小型皮具设计，不仅是四个挂钩。",
+          "weight_g": 92
+        }
+      ],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": null,
+      "case_id": "V6R-027",
+      "source_run_id": "a457f62072e0452d8917d3420f4deec4",
+      "source_sha256": "89b706e5f5a3235c2233e00f8d2affd917dcae8b901367922a2f8689c4e992e3",
+      "scenario": "price",
+      "candidates": [
+        {
+          "id": "a",
+          "text": "宁姐，可以看它的折边：外皮边缘向内折，再和内里缝合，合上后露出的是整齐的皮革折边。内外两层皮革把你常带的四把钥匙包起来，也把钥匙和包里其他东西隔开，这就是它在收纳之外做的设计。"
+        },
+        {
+          "id": "b",
+          "text": "宁姐，一个能直接看到的细节是里面的横桥形底座：四枚挂钩沿桥排列，两端用圆头铆钉固定。它把挂钩的排列也做成了完整的造型，打开后就能看到你在意的“小东西也有完整设计”。"
+        },
+        {
+          "id": "c",
+          "text": "宁姐，制作上的一个具体区别是：它把外皮边缘折到里面，再与内里缝合，合起来看到的是皮革折边和低矮按扣。四把钥匙收在双层皮革里，放进衣袋或包里时，金属钥匙也和其他随身物隔开。"
+        }
+      ],
+      "generated_scenario": "price"
+    },
+    {
+      "as_of": "2026-02-07T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-06",
+        "name": "邵宁",
+        "salutation": "宁姐"
+      },
+      "events": [
+        {
+          "actor": "system",
+          "customer_id": "v5-person-06",
+          "data": {
+            "product_id": "ETUI04"
+          },
+          "id": "V6R-028-prior-0",
+          "kind": "purchase",
+          "occurred_at": "2025-11-07T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:50:47.240186+00:00",
+          "text": "2025年11月购入Etui 04，交付时完好。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-06",
+          "data": {},
+          "id": "v5-person-06-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:49:54.224493+00:00",
+          "text": "我每天带四把普通家门钥匙，不带车钥匙。喜欢小东西也有完整设计，有合适内容可以联系我。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-06",
+          "data": {},
+          "id": "V6R-026-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:49:54.234266+00:00",
+          "text": "今天生日，刚吃完蛋糕。你不用想什么特别的话，正常祝福就好。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-06",
+          "data": {},
+          "id": "V6R-027-client",
+          "kind": "message",
+          "occurred_at": "2026-02-04T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:50:13.004737+00:00",
+          "text": "钥匙包2200总不能只因为挂四把钥匙吧？别念一大段历史，给我说一个能看到的设计理由。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-06",
+          "data": {},
+          "id": "V6R-028-client",
+          "kind": "message",
+          "occurred_at": "2026-02-07T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:50:47.241873+00:00",
+          "text": "这个钥匙包刚买三个月，有一枚挂钩松了，这种肯定免费修吗？"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:49:54.226927+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "ecc4ac2ad92143e6be33a80d436c0158",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-06",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-06-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:49:54.226936+00:00",
+          "value": "我每天带四把普通家门钥匙，不带车钥匙"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:49:54.232290+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "04c2de2dd1f448568dff0909f937e745",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-06",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-06-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:49:54.232300+00:00",
+          "value": "allowed"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:49:54.229635+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "1ce3d9694367405481aaa44407a30b9f",
+          "key": "interest",
+          "kind": "fact",
+          "owner_id": "v5-person-06",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-06-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:49:54.229645+00:00",
+          "value": "喜欢小东西也有完整设计"
+        }
+      ],
+      "products": [
+        {
+          "capacity": "四把普通家门钥匙；不适合较厚车钥匙和门禁遥控器，无硬币层。",
+          "care": "干布轻拭；避免潮湿，不硬塞过厚钥匙；挂钩松动时交沙龙检测。",
+          "carry": "放入包内或衣袋，隔开钥匙与其他随身物。",
+          "catalog_version": "virel-catalog-3",
+          "claims_policy": [
+            "没有名人同款、限量收藏、保值或升值的依据，不得宣称。"
+          ],
+          "collection": "ETUI",
+          "colors": [
+            "深杉绿",
+            "咖啡棕"
+          ],
+          "construction": "四枚独立可更换钥匙挂钩固定在横桥形金属底座上；包边折入后缝合，闭合处为一组低矮按扣（两侧各一枚组件），正面无大logo。",
+          "design_detail": "打开后桥形底座横跨浅色内里，四枚独立挂钩沿桥排列；闭合后只露皮革折边和按扣正面。与Pont包袋的外置桥扣形成内外呼应。",
+          "design_notes": [
+            {
+              "detail": "四枚挂钩沿一块横桥形金属底座排列，桥两端的圆头铆钉与Pont正面扣件一致。桥在肩包外侧负责开合，在钥匙包内侧组织挂钩。",
+              "title": "打开能看到的共同设计"
+            },
+            {
+              "detail": "外皮边缘向内折返，再与内里缝合，闭合后首先看到皮革折边和低矮按扣；内外两层皮革包覆四把普通钥匙。不是四个裸挂钩直接外露。",
+              "title": "把边缘折进去"
+            },
+            {
+              "detail": "每枚挂钩可单独交工坊检测更换。四把普通家门钥匙是设计容量；车钥匙盒、遥控器和硬币需要其他收纳方式。能否维修、价格和时间须检测后确认。",
+              "title": "为日常钥匙保留的尺度"
+            }
+          ],
+          "dimensions_cm": [
+            10.5,
+            6.5,
+            2
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "带四把普通家门钥匙，希望合起来收进衣袋或包里；在意小皮具与包袋的设计关联。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "是否带较厚的车钥匙、遥控器或超过四把钥匙。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "etui04.png"
+            },
+            {
+              "caption": "折边与横桥",
+              "image": "etui-detail-v6.png"
+            },
+            {
+              "caption": "同一横桥，两种尺度",
+              "image": "bridge-family-v6.png"
+            }
+          ],
+          "id": "ETUI04",
+          "image": "etui04.png",
+          "limits": [
+            "配件不是贵金属。",
+            "四把普通家门钥匙的设计容量；较厚车钥匙和遥控器不适用。"
+          ],
+          "material": "细粒面小牛皮，光面牛皮内里",
+          "name": "Etui 04 四扣钥匙包",
+          "price_cny": 2200,
+          "subtitle": "一件可以打开看的小型箱匣",
+          "value_story": "箱匣工坊习惯先安排内部分隔，再考虑外形。Etui 04把这件事缩到掌心：打开后，桥形金属底座和浅色皮革内里一目了然；合上后，双层皮革把钥匙与随身物隔开。桥形构件与Pont包袋相呼应，价值在于完整的小型皮具设计，不仅是四个挂钩。",
+          "weight_g": 92
+        }
+      ],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": null,
+      "case_id": "V6R-028",
+      "source_run_id": "a490d5a87b8c4a22bdea1f63d9794999",
+      "source_sha256": "b66b63018ddbd7e406051ced664ad6dca3a16ec6c079102606deb747d6e08cdf",
+      "scenario": "care",
+      "candidates": [
+        {
+          "id": "b",
+          "text": "宁姐，现在还不能直接确定免费，得先由沙龙检测这枚挂钩。你买了三个月，检测若确认为制作缺陷，就在12个月内免费维修的范围；若属于磨损或意外损伤，会先报价，经你确认再处理。"
+        },
+        {
+          "id": "a",
+          "text": "宁姐，买了三个月还在12个月期限内，但是否免费，要先检测确认松动原因。可以把钥匙包交沙龙检测：属于制作缺陷就免费维修；若是正常磨损或意外损伤，会先报价，等你确认后再处理。"
+        },
+        {
+          "id": "c",
+          "text": "宁姐，这枚松动的挂钩可以交沙龙检测，是否免费要看检测结果。买了三个月，若确认是制作缺陷会免费维修；若是正常磨损或意外损伤，会先给你报价，确认后再处理。"
+        }
+      ],
+      "generated_scenario": "care"
+    },
+    {
+      "as_of": "2026-11-10T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-09",
+        "name": "唐川",
+        "salutation": "唐先生"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-09",
+          "data": {},
+          "id": "v5-person-09-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "partially_redacted": true,
+          "recorded_at": "2026-11-07T17:54:02.910413+00:00",
+          "text": "［已撤回的事实］。我更喜欢深绿色；对应的商品和活动可以联系我。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-09",
+          "data": {},
+          "id": "V6R-041-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:54:02.919941+00:00",
+          "text": "今天生日。谢谢你记得，我已经安排好了，简单聊一句就好。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-09",
+          "data": {},
+          "id": "V6R-042-client",
+          "kind": "message",
+          "occurred_at": "2026-02-04T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:54:22.467198+00:00",
+          "text": "20看着小巧，26也喜欢。按我平常带的东西，哪个更合适？"
+        },
+        {
+          "actor": "system",
+          "customer_id": "v5-person-09",
+          "data": {
+            "product_id": "PONT26"
+          },
+          "id": "V6R-043-prior-0",
+          "kind": "purchase",
+          "occurred_at": "2026-02-07T01:50:00+00:00",
+          "recorded_at": "2026-11-07T17:54:51.864812+00:00",
+          "text": "深杉绿Pont 26已购买并交付。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-09",
+          "data": {},
+          "id": "V6R-043-client",
+          "kind": "message",
+          "occurred_at": "2026-02-07T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:54:51.866492+00:00",
+          "text": "26刚淋雨了，能放太阳下面晒快一点吗？今晚还想背。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-09",
+          "data": {},
+          "id": "V6R-044-client",
+          "kind": "message",
+          "occurred_at": "2026-11-07T03:00:00+00:00",
+          "recorded_at": "2026-11-07T17:55:18.773225+00:00",
+          "text": "包用得挺好。我换成了很厚的车钥匙，想看看配套钥匙包，11月10日上午联系我说说适不适合。"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:54:02.912963+00:00",
+          "effective_at": "2026-11-07T03:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "3a8db2ae651f43558cad99d17099a1ff",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-09",
+          "provenance": "explicit",
+          "revision": 2,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "V6R-044-client",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:55:18.775667+00:00",
+          "value": "我换成了很厚的车钥匙"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:54:02.915509+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "8f43714c24d147feaeca10f6db15e93f",
+          "key": "color",
+          "kind": "fact",
+          "owner_id": "v5-person-09",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-09-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:54:02.915520+00:00",
+          "value": "我更喜欢深绿色"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:54:02.917876+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "f203b94aac734f5ba11ac4a0eb48d76d",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-09",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-09-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:54:02.917886+00:00",
+          "value": "allowed"
+        }
+      ],
+      "products": [
+        {
+          "capacity": "四把普通家门钥匙；不适合较厚车钥匙和门禁遥控器，无硬币层。",
+          "care": "干布轻拭；避免潮湿，不硬塞过厚钥匙；挂钩松动时交沙龙检测。",
+          "carry": "放入包内或衣袋，隔开钥匙与其他随身物。",
+          "catalog_version": "virel-catalog-3",
+          "claims_policy": [
+            "没有名人同款、限量收藏、保值或升值的依据，不得宣称。"
+          ],
+          "collection": "ETUI",
+          "colors": [
+            "深杉绿",
+            "咖啡棕"
+          ],
+          "construction": "四枚独立可更换钥匙挂钩固定在横桥形金属底座上；包边折入后缝合，闭合处为一组低矮按扣（两侧各一枚组件），正面无大logo。",
+          "design_detail": "打开后桥形底座横跨浅色内里，四枚独立挂钩沿桥排列；闭合后只露皮革折边和按扣正面。与Pont包袋的外置桥扣形成内外呼应。",
+          "design_notes": [
+            {
+              "detail": "四枚挂钩沿一块横桥形金属底座排列，桥两端的圆头铆钉与Pont正面扣件一致。桥在肩包外侧负责开合，在钥匙包内侧组织挂钩。",
+              "title": "打开能看到的共同设计"
+            },
+            {
+              "detail": "外皮边缘向内折返，再与内里缝合，闭合后首先看到皮革折边和低矮按扣；内外两层皮革包覆四把普通钥匙。不是四个裸挂钩直接外露。",
+              "title": "把边缘折进去"
+            },
+            {
+              "detail": "每枚挂钩可单独交工坊检测更换。四把普通家门钥匙是设计容量；车钥匙盒、遥控器和硬币需要其他收纳方式。能否维修、价格和时间须检测后确认。",
+              "title": "为日常钥匙保留的尺度"
+            }
+          ],
+          "dimensions_cm": [
+            10.5,
+            6.5,
+            2
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "带四把普通家门钥匙，希望合起来收进衣袋或包里；在意小皮具与包袋的设计关联。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "是否带较厚的车钥匙、遥控器或超过四把钥匙。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "etui04.png"
+            },
+            {
+              "caption": "折边与横桥",
+              "image": "etui-detail-v6.png"
+            },
+            {
+              "caption": "同一横桥，两种尺度",
+              "image": "bridge-family-v6.png"
+            }
+          ],
+          "id": "ETUI04",
+          "image": "etui04.png",
+          "limits": [
+            "配件不是贵金属。",
+            "四把普通家门钥匙的设计容量；较厚车钥匙和遥控器不适用。"
+          ],
+          "material": "细粒面小牛皮，光面牛皮内里",
+          "name": "Etui 04 四扣钥匙包",
+          "price_cny": 2200,
+          "subtitle": "一件可以打开看的小型箱匣",
+          "value_story": "箱匣工坊习惯先安排内部分隔，再考虑外形。Etui 04把这件事缩到掌心：打开后，桥形金属底座和浅色皮革内里一目了然；合上后，双层皮革把钥匙与随身物隔开。桥形构件与Pont包袋相呼应，价值在于完整的小型皮具设计，不仅是四个挂钩。",
+          "weight_g": 92
+        }
+      ],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": null,
+      "case_id": "V6R-044",
+      "source_run_id": "3fe99b18c1ae4f7999636b1b4bc1784f",
+      "source_sha256": "aa863c81e871271937f972c0c44f5f5559dee0648a8e4039db7a23619ff583f0",
+      "scenario": "reactivation",
+      "candidates": [
+        {
+          "id": "a",
+          "text": "唐先生，按约今天跟您说说钥匙包：您新换的厚车钥匙不适合用Etui 04。这款是按四把普通家门钥匙设计的，厚车钥匙不适用。"
+        },
+        {
+          "id": "b",
+          "text": "唐先生，您想看的Etui 04有深杉绿，设计上也和您的Pont 26呼应。不过它适合收纳四把普通家门钥匙，您新换的厚车钥匙不适用，所以这次不推荐这款。"
+        },
+        {
+          "id": "c",
+          "text": "唐先生，今天按约联系您。Etui 04不适合您现在这把很厚的车钥匙，它的收纳空间是为普通家门钥匙设计的，不建议硬塞进去。"
+        }
+      ],
+      "generated_scenario": "recommendation"
+    },
+    {
+      "as_of": "2026-11-13T02:00:00+00:00",
+      "customer": {
+        "id": "v5-person-07",
+        "name": "黎庭",
+        "salutation": "小黎"
+      },
+      "events": [
+        {
+          "actor": "client",
+          "customer_id": "v5-person-07",
+          "data": {},
+          "id": "v5-person-07-intro",
+          "kind": "message",
+          "occurred_at": "2026-01-01T02:00:00+00:00",
+          "partially_redacted": true,
+          "recorded_at": "2026-11-07T17:51:38.669074+00:00",
+          "text": "［已撤回的事实］，［已撤回的事实］，平时用卡多。他的喜好和我不同，这次按他来。相关消息可以告诉我。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-07",
+          "data": {},
+          "id": "V6R-031-client",
+          "kind": "message",
+          "occurred_at": "2026-02-01T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:51:38.681607+00:00",
+          "text": "给弟弟的礼物在卡夹和钥匙包之间选，你帮我挑一个更对路的。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-07",
+          "data": {},
+          "id": "V6R-032-client",
+          "kind": "message",
+          "occurred_at": "2026-02-04T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:52:09.401592+00:00",
+          "text": "卡夹1800以外，加三个字母的压印多少钱？能保证今天做完吗？"
+        },
+        {
+          "actor": "system",
+          "customer_id": "v5-person-07",
+          "data": {
+            "product_id": "PASSAGE"
+          },
+          "id": "V6R-033-prior-0",
+          "kind": "purchase",
+          "occurred_at": "2026-02-07T01:50:00+00:00",
+          "recorded_at": "2026-11-07T17:52:38.007907+00:00",
+          "text": "深杉绿Passage卡夹已购买交付，无压印。"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-07",
+          "data": {},
+          "id": "V6R-033-client",
+          "kind": "message",
+          "occurred_at": "2026-02-07T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:52:38.009608+00:00",
+          "text": "卡夹已经送他了，他想硬塞八张卡进去，会不会撑坏？"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-07",
+          "data": {},
+          "id": "V6R-034-client",
+          "kind": "message",
+          "occurred_at": "2026-11-10T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:53:07.144815+00:00",
+          "text": "之前那件礼物用得不错。这回是我自己要，颜色改看白色，卡夹你还会推荐同一款吗？"
+        },
+        {
+          "actor": "client",
+          "customer_id": "v5-person-07",
+          "data": {},
+          "id": "V6R-035-client",
+          "kind": "message",
+          "occurred_at": "2026-11-13T02:00:00+00:00",
+          "recorded_at": "2026-11-07T17:53:37.261602+00:00",
+          "text": "明天的活动我想和弟弟、他同学三个人同时看半小时，能直接约一组吗？"
+        }
+      ],
+      "memories": [
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:51:38.676795+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "9b06fe19f11a417fa62204c5f9bc374c",
+          "key": "carry",
+          "kind": "fact",
+          "owner_id": "v5-person-07",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-07-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:51:38.676805+00:00",
+          "value": "平时用卡多"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:51:38.674216+00:00",
+          "effective_at": "2026-11-10T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "d06025c00c46474599474931632b099e",
+          "key": "color",
+          "kind": "fact",
+          "owner_id": "v5-person-07",
+          "provenance": "explicit",
+          "revision": 2,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "V6R-034-client",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:53:07.149689+00:00",
+          "value": "颜色改看白色"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:51:38.679482+00:00",
+          "effective_at": "2026-01-01T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "331d03df65c34dfcbac5a03783471d48",
+          "key": "contact_permission",
+          "kind": "fact",
+          "owner_id": "v5-person-07",
+          "provenance": "explicit",
+          "revision": 1,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "v5-person-07-intro",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:51:38.679492+00:00",
+          "value": "allowed"
+        },
+        {
+          "applicability": "所有情境",
+          "created_at": "2026-11-07T17:51:38.671640+00:00",
+          "effective_at": "2026-11-10T02:00:00+00:00",
+          "expires_at": null,
+          "human_locked": 0,
+          "id": "e4ec53bd3e7847a88d2edc7e0891c325",
+          "key": "gift_recipient",
+          "kind": "fact",
+          "owner_id": "v5-person-07",
+          "provenance": "explicit",
+          "revision": 2,
+          "scope": "customer",
+          "source": "预先声明的虚构测试事实",
+          "source_event_id": "V6R-034-client",
+          "source_quote": null,
+          "status": "active",
+          "updated_at": "2026-11-07T17:53:07.147187+00:00",
+          "value": "这回是我自己要"
+        }
+      ],
+      "products": [
+        {
+          "capacity": "六张卡与少量折叠纸币；无硬币层。",
+          "care": "干布轻拭，避免过量塞卡和酒精。",
+          "carry": "衣袋或包内。",
+          "catalog_version": "virel-catalog-3",
+          "collection": "ETUI",
+          "colors": [
+            "深杉绿",
+            "石灰白"
+          ],
+          "construction": "两侧各三个卡位与中间夹层；侧边一体折返，卡槽开口切成轻微弧线方便取用。",
+          "design_notes": [
+            {
+              "detail": "一侧边缘由皮革折返连接，两面各三个略带弧线的卡槽；弧线留出手指接触卡片的位置。中间夹层仅用于少量折叠纸币。",
+              "title": "一折与六个开口"
+            },
+            {
+              "detail": "约55克，适合六张常用卡与少量折叠纸币。没有硬币层；过量塞卡会改变厚度与形状。需要RFID屏蔽时，应另选相应产品。",
+              "title": "轻薄，也有明确容量"
+            }
+          ],
+          "dimensions_cm": [
+            10.5,
+            8,
+            1
+          ],
+          "fictional": true,
+          "fit_checks": [
+            {
+              "detail": "主要用六张卡，偶尔带少量纸币，不需要硬币层。",
+              "title": "适合的日常"
+            },
+            {
+              "detail": "是否实际常带更多卡、硬币或需要RFID屏蔽。",
+              "title": "先核对"
+            }
+          ],
+          "gallery": [
+            {
+              "caption": "整体轮廓",
+              "image": "passage-v2.png"
+            }
+          ],
+          "id": "PASSAGE",
+          "image": "passage-v2.png",
+          "limits": [
+            "不具备RFID屏蔽功能。"
+          ],
+          "material": "粒面小牛皮",
+          "name": "Passage 六卡位卡夹",
+          "price_cny": 1800,
+          "subtitle": "保留一条完整的皮革折边",
+          "value_story": "一条完整折边连接两面皮革，六个弧形卡槽留出取卡的位置。与Etui共享包覆边缘的做法，把设计收进约55克的日常随身物。",
+          "weight_g": 55
+        }
+      ],
+      "brand": {
+        "atelier_practice": [
+          {
+            "detail": "沙龙试用先让客户放入常带的手机、卡夹、钥匙或电脑，再比较取用与背负；不只展示空包。试背及物品适配核对不收费，时段需预约确认。",
+            "title": "从随身物开始"
+          },
+          {
+            "detail": "展示横桥扣、折边样件与钥匙挂钩底座，让顾客看到结构与成品的联系。展示件用于说明工艺，不承诺顾客现场拆装成品。",
+            "title": "看见部件怎样工作"
+          },
+          {
+            "detail": "成交后在客户同意下记录商品、颜色、购买日期与已确认的服务事项，售后沿同一记录继续；档案不是终身免费维修或收藏价值证明。",
+            "title": "留下一份器物档案"
+          }
+        ],
+        "category": "包袋、小皮具与旅行用品",
+        "contact_defaults": {
+          "outbound_cooldown_days": 7,
+          "unanswered_outreach_limit": 2
+        },
+        "design_codes": [
+          {
+            "detail": "低矮的圆角矩形金属桥，左右各一枚圆头铆钉；提供触感明确的开合位置，不铺满标识。",
+            "name": "横桥扣"
+          },
+          {
+            "detail": "平底、圆角与独立内隔，把收纳安排作为轮廓的一部分；不为外观牺牲取物路径。",
+            "name": "箱匣分隔"
+          },
+          {
+            "detail": "可拆肩带、扣件检测与单独更换的钥匙挂钩；具体能否修复、费用和工期经检测确认。",
+            "name": "可维护部件"
+          }
+        ],
+        "disclosure": "为本次作品创作的虚构品牌。品牌历史、人物、工坊、商品与服务均为演示设定，不对应真实商家。",
+        "fictional": true,
+        "history": [
+          {
+            "detail": "虚构匠人 Adrien Virel 在里昂开设小型工坊，为建筑模型与精密器具制作皮革包覆的携行箱。圆角、内部分隔与可替换扣件形成早期语言。",
+            "title": "箱匣工坊",
+            "year": 1986
+          },
+          {
+            "detail": "第二代设计师 Elise Virel 将箱匣的分隔结构缩小为公文包与旅行收纳系列，保留平整底面和容易触及的独立隔层。",
+            "title": "从箱匣到随身皮具",
+            "year": 2008
+          },
+          {
+            "detail": "将早期箱匣两端固定的横桥扣件转化为日常包袋开合，桥形轮廓与两枚圆头铆钉成为系列共同识别。",
+            "title": "Pont 桥扣系列",
+            "year": 2018
+          },
+          {
+            "detail": "设立虚构的上海衡山路沙龙，提供试背、部件检测及小型工艺展示；地址只作演示地点，不对应真实营业场所。",
+            "title": "上海预约沙龙",
+            "year": 2024
+          }
+        ],
+        "house": "MAISON VIREL",
+        "name": "VIREL 维珞",
+        "palette": {
+          "brass": "#a4956d",
+          "forest": "#173c32",
+          "ink": "#202b27",
+          "ivory": "#f5f3ed",
+          "stone": "#d8d5ca"
+        },
+        "policies": {
+          "availability": "库存与预留必须使用本次有时间戳的库存记录。商品目录不等于有货；已知到货不等于已替客户预留。",
+          "boutique_events": "沙龙工艺活动没有购买义务，可以只观看工艺，不参加试背；不得以购买作为预约条件。具体人数、时段和展示内容以当次活动资料为准，不能自行确认名额。",
+          "care": "按商品护理说明提供建议；明显染色、破损或五金松动交工坊检测，不自行建议化学清洗。",
+          "contact": "客户拒绝营销后不再主动营销；客户主动提出服务问题可就该问题回复。联系冷却只约束主动触达，不阻断客户主动咨询。",
+          "fitting": "沙龙可免费核对日常随身物与商品的尺寸、开合、取用及试背位置。客户不必购买；预约时段需确认。商品外尺寸不保证带保护壳的设备能放入，不承诺任何姿势都舒适。",
+          "packaging": "所有目录商品的标价包含标准防尘袋与品牌纸盒；礼物丝带及空白贺卡不另收费。它们是标准包装服务，不是抵扣货价的赠品。特殊包装、额外补领或代写内容另行确认，不能承诺额外免费商品。",
+          "personalization": "仅 Etui 04 和 Passage 卡夹可申请内侧最多3个拉丁字母盲压，费用180元；可否操作及工期需沙龙确认。不是免费赠送，未经确认不承诺当天完成。",
+          "pricing": "演示目录的人民币标价为当前沙龙售价；本期无折扣，无私下抹零或以赠品抵扣。顾问无权降价。",
+          "privacy": "所有客户和对话均为虚构。个人偏好仅用于对应顾问，不修改品牌事实或共享服务政策。",
+          "repair": "购买后12个月内，经检测确认为制作缺陷的项目免费维修；正常磨损与意外损伤先检测报价，客户确认后处理。不承诺所有损坏可修复、固定工期或终身免费。"
+        },
+        "positioning": "独立高级皮具屋。由皮革包覆的携行箱出发，把横桥扣、折返边缘与分区收纳带入日常；为重视器物设计、愿意长期使用的人服务，不按性别划分使用者。",
+        "version": "virel-brand-3",
+        "voice": [
+          "像了解客户的中文微信顾问，先回应眼前的问题，再决定是否补充资料。",
+          "表达具体、自然、有分寸；可以短到一句不客气，不强加字数和行动邀请。",
+          "品牌故事只有在解释客户关心的价值时才出现，一次选一个有关的设计细节，不背品牌史。",
+          "给出三条可发送候选并推荐最贴合当前情境的一条；不为差异预设问题、不凑三种营销策略。",
+          "称呼依据客户明确偏好，不从姓名猜性别；收礼人的需求与购买者分开。",
+          "不使用尊贵的您、闭眼入、手慢无、买到就是赚到；避免诗意空话、身份恭维和道德说教。"
+        ]
+      },
+      "boutique_event": {
+        "access": "免费预约，没有购买义务；每组30分钟，每组合计最多2人（包含客户本人，即客户最多携带1位同行者）。三人不能同组；多人分组的时段和安排须另向沙龙确认。具体时段由沙龙确认，尚未替任何客户留位。",
+        "content": "金属横桥扣拆解示范、皮革包边现场演示、可自愿参加的Pont系列试背。可以只看工艺；不是维修现场，不承诺即时修好商品。",
+        "ends_at": "2026-11-14T17:00:00+08:00",
+        "fictional": true,
+        "id": "bridge-preview",
+        "location": "上海衡山路 VIREL 沙龙（虚构地点）",
+        "name": "桥扣与皮革 · 工坊近赏",
+        "starts_at": "2026-11-14T14:00:00+08:00"
+      },
+      "case_id": "V6R-035",
+      "source_run_id": "6c1ef480bb01445da209fe84427aef63",
+      "source_sha256": "12d3c6e10f40cf7f9fb469665a1c0d147070d7977abd21c915d282c850e55647",
+      "scenario": "invitation",
+      "candidates": [
+        {
+          "id": "a",
+          "text": "小黎，三个人不能直接约一组，每组半小时最多2人，包含你本人。我可以先向沙龙确认三人分组后能否安排在同一时段，暂时还不能保证一起看。"
+        },
+        {
+          "id": "b",
+          "text": "小黎，每组是30分钟，你最多可以带1位同行者，所以你和弟弟、他同学三人不能同组。要一起看同一时段的话，我可以先问沙龙是否能分组安排，具体还得等确认。"
+        },
+        {
+          "id": "c",
+          "text": "小黎，半小时是每组的观看时长，但每组含本人最多2人，三位不能约成一组。我可以帮你问问分组的时段安排，能否同时观看要由沙龙确认。"
+        }
+      ],
+      "generated_scenario": "invitation"
+    }
+  ]
+}

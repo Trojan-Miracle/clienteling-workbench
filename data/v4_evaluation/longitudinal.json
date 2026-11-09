@@ -1,0 +1,1004 @@
+{
+  "purpose": "最终留出输入草案，尚未生成输出；10位虚构客户，每位5次连续互动。",
+  "scenario_counts": {
+    "recommendation": 10,
+    "price": 8,
+    "care": 8,
+    "greeting": 8,
+    "invitation": 8,
+    "reactivation": 8
+  },
+  "customers": [
+    {
+      "id": "long-01",
+      "name": "沈葭",
+      "salutation": "葭葭",
+      "introduction": "叫我葭葭就好。我喜欢深绿色，平时只带手机和薄钱包。可以发和我需求相关的信息，生日那天简单打个招呼也好。",
+      "facts": {
+        "color": "喜欢深绿色",
+        "daily_carry": "手机和薄钱包",
+        "birthday": "11-10",
+        "contact_permission": "allowed"
+      },
+      "episodes": [
+        {
+          "scenario": "recommendation",
+          "message": "平时出去吃饭背，想利落一点，不要太大的。你建议看哪款？",
+          "product_ids": [
+            "PONT20",
+            "PONT26"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-001",
+          "as_of": "2026-02-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "price",
+          "message": "Pont 26 的8800元现在有优惠吗？没有的话你直说就行。",
+          "product_ids": [
+            "PONT26"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-002",
+          "as_of": "2026-02-04T10:00:00+08:00"
+        },
+        {
+          "scenario": "care",
+          "message": "我这两天要出差，包到货后提醒我一下淋雨时该怎么处理。",
+          "product_ids": [
+            "PONT26"
+          ],
+          "facts": {},
+          "before": [
+            {
+              "kind": "purchase",
+              "actor": "system",
+              "text": "2月5日购买深杉绿 Pont 26，已交付。",
+              "data": {
+                "product_id": "PONT26"
+              },
+              "occurred_at": "2026-02-05T10:00:00+08:00"
+            }
+          ],
+          "trigger": "event",
+          "intent": "已交付，按此前要求补充淋雨处理说明，不假定客户已经淋雨或包有损坏。",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-003",
+          "as_of": "2026-02-07T10:00:00+08:00",
+          "message_at": "2026-02-04T10:30:00+08:00"
+        },
+        {
+          "scenario": "greeting",
+          "message": "生日那天要和家人吃饭，简单打个招呼就好，别提买包啦。",
+          "product_ids": [],
+          "facts": {
+            "communication": "生日问候不带商品信息"
+          },
+          "before": [],
+          "trigger": "timer",
+          "intent": "",
+          "occasion": "11月10日客户生日",
+          "event_id": null,
+          "case_id": "V4-004",
+          "as_of": "2026-11-10T10:00:00+08:00",
+          "message_at": "2026-10-30T10:00:00+08:00"
+        },
+        {
+          "scenario": "invitation",
+          "message": "上次那个桥扣我挺好奇的，明天下午有机会看看怎么做的吗？",
+          "product_ids": [
+            "PONT26"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": "bridge-preview",
+          "case_id": "V4-005",
+          "as_of": "2026-11-13T10:00:00+08:00"
+        }
+      ],
+      "initial_at": "2026-01-28T10:00:00+08:00"
+    },
+    {
+      "id": "long-02",
+      "name": "方竞",
+      "salutation": "方先生",
+      "introduction": "经常地铁通勤，手机和钱包就够，越轻越好，黑色最好。我同意你在有合适商品或工艺活动时联系，忙的时候可能晚回。",
+      "facts": {
+        "color": "黑色",
+        "carry": "地铁通勤，随身物少，重视轻便",
+        "contact_permission": "allowed"
+      },
+      "episodes": [
+        {
+          "scenario": "recommendation",
+          "message": "我想要轻一点的斜挎，Transit跟Pont 26差在哪？",
+          "product_ids": [
+            "TRANSIT",
+            "PONT26"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-006",
+          "as_of": "2026-02-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "price",
+          "message": "Transit按5000算行不行？就差这200。",
+          "product_ids": [
+            "TRANSIT"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-007",
+          "as_of": "2026-02-04T10:00:00+08:00"
+        },
+        {
+          "scenario": "care",
+          "message": "包到了，我明天就背。这个织物脏了能直接泡水洗吗？",
+          "product_ids": [
+            "TRANSIT"
+          ],
+          "facts": {},
+          "before": [
+            {
+              "kind": "purchase",
+              "actor": "system",
+              "text": "2月5日按5200元购买黑色 Transit，2月7日已签收。",
+              "data": {
+                "product_id": "TRANSIT"
+              },
+              "occurred_at": "2026-02-05T10:00:00+08:00"
+            }
+          ],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-008",
+          "as_of": "2026-02-07T10:00:00+08:00"
+        },
+        {
+          "scenario": "reactivation",
+          "message": "包用着挺好，接下来几个月会很忙。11月10日以后再联系我吧，到时想听听工艺活动。",
+          "product_ids": [
+            "TRANSIT"
+          ],
+          "facts": {
+            "contact_after": "2026-11-10T09:00:00+08:00"
+          },
+          "before": [],
+          "trigger": "timer",
+          "intent": "按约定日期恢复联系，询问是否仍愿意了解工艺内容，不假定现在有空。",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-009",
+          "as_of": "2026-11-10T10:00:00+08:00",
+          "message_at": "2026-02-14T10:00:00+08:00"
+        },
+        {
+          "scenario": "invitation",
+          "message": "你们明天的工艺活动得待一下午吗？我可能只有四十分钟。",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": "bridge-preview",
+          "case_id": "V4-010",
+          "as_of": "2026-11-13T10:00:00+08:00"
+        }
+      ],
+      "initial_at": "2026-01-28T10:00:00+08:00"
+    },
+    {
+      "id": "long-03",
+      "name": "罗予",
+      "salutation": "予予",
+      "introduction": "给自己买小皮具，想用很多年，最好不要显眼的标志。相关上新和生日问候可以发，不用经常催我。",
+      "facts": {
+        "interest": "自用、低调、长期使用的小皮具",
+        "birthday": "11-10",
+        "contact_permission": "allowed"
+      },
+      "episodes": [
+        {
+          "scenario": "recommendation",
+          "message": "想把钥匙收整齐，钥匙扣老把包里东西划到。有什么合适的？",
+          "product_ids": [
+            "ETUI04",
+            "PASSAGE"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-011",
+          "as_of": "2026-02-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "price",
+          "message": "四个挂钩就2200？我不是要砍价，是想知道它有什么特别。",
+          "product_ids": [
+            "ETUI04"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-012",
+          "as_of": "2026-02-04T10:00:00+08:00"
+        },
+        {
+          "scenario": "care",
+          "message": "我有一把车钥匙比较厚，好像合起来有点鼓，还能硬扣上吗？",
+          "product_ids": [
+            "ETUI04"
+          ],
+          "facts": {},
+          "before": [
+            {
+              "kind": "purchase",
+              "actor": "system",
+              "text": "2月5日购买深杉绿 Etui 04，已交付。",
+              "data": {
+                "product_id": "ETUI04"
+              },
+              "occurred_at": "2026-02-05T10:00:00+08:00"
+            }
+          ],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-013",
+          "as_of": "2026-02-07T10:00:00+08:00"
+        },
+        {
+          "scenario": "greeting",
+          "message": "国庆假期陪家人，简单问候可以，先不聊买东西。",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "timer",
+          "intent": "",
+          "occasion": "10月1日国庆节",
+          "event_id": null,
+          "case_id": "V4-014",
+          "as_of": "2026-10-01T10:00:00+08:00",
+          "message_at": "2026-09-27T10:00:00+08:00"
+        },
+        {
+          "scenario": "reactivation",
+          "message": "后来把车钥匙单独放了，现在钥匙包用得顺手。之前说想看别的小皮具，最近可以慢慢看看。",
+          "product_ids": [
+            "PASSAGE",
+            "ETUI04"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-015",
+          "as_of": "2026-11-13T10:00:00+08:00"
+        }
+      ],
+      "initial_at": "2026-01-28T10:00:00+08:00"
+    },
+    {
+      "id": "long-04",
+      "name": "高敏",
+      "salutation": "高女士",
+      "introduction": "先帮我看看周末小包，我原先喜欢小一点的。你可以按我具体需求发建议，也可以通知工艺活动。我11月10日生日。",
+      "facts": {
+        "carry": "原先想找周末小包",
+        "birthday": "11-10",
+        "contact_permission": "allowed"
+      },
+      "episodes": [
+        {
+          "scenario": "recommendation",
+          "message": "工作变了，现在每天要带13寸电脑和A4文件，还是推荐小包吗？",
+          "product_ids": [
+            "PONT26",
+            "TRAVERSE32"
+          ],
+          "facts": {
+            "carry": "每天携带13英寸电脑和A4文件，需求已改为通勤包"
+          },
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-016",
+          "as_of": "2026-02-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "price",
+          "message": "这个通勤包要12800，主要贵在什么地方？别只说品牌。",
+          "product_ids": [
+            "TRAVERSE32"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-017",
+          "as_of": "2026-02-04T10:00:00+08:00"
+        },
+        {
+          "scenario": "care",
+          "message": "包收到了，电脑带壳放进去稍紧，我是不是该把壳拆了？",
+          "product_ids": [
+            "TRAVERSE32"
+          ],
+          "facts": {},
+          "before": [
+            {
+              "kind": "purchase",
+              "actor": "system",
+              "text": "2月5日购买深杉绿 Traverse 32，已签收；电脑保护壳尺寸未记录。",
+              "data": {
+                "product_id": "TRAVERSE32"
+              },
+              "occurred_at": "2026-02-05T10:00:00+08:00"
+            }
+          ],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-018",
+          "as_of": "2026-02-07T10:00:00+08:00"
+        },
+        {
+          "scenario": "greeting",
+          "message": "今天生日还在赶文件，祝福我收到了，谢谢惦记。",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "11月10日客户生日",
+          "event_id": null,
+          "case_id": "V4-019",
+          "as_of": "2026-11-10T10:00:00+08:00"
+        },
+        {
+          "scenario": "invitation",
+          "message": "明天工坊活动我有兴趣，但还不知道几点能从办公室走。可以先了解内容吗？",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": "bridge-preview",
+          "case_id": "V4-020",
+          "as_of": "2026-11-13T10:00:00+08:00"
+        }
+      ],
+      "initial_at": "2026-01-28T10:00:00+08:00"
+    },
+    {
+      "id": "long-05",
+      "name": "孟屿",
+      "salutation": "孟先生",
+      "introduction": "这次给妹妹选礼物，她喜欢白色。我自己通常买黑色，别把我俩弄反了。礼物相关的消息可以发，工艺活动她也可能喜欢。",
+      "facts": {
+        "recipient": "妹妹，喜欢白色",
+        "own_color": "购买者本人喜欢黑色",
+        "contact_permission": "allowed"
+      },
+      "episodes": [
+        {
+          "scenario": "recommendation",
+          "message": "那这次你建议我给她选哪个颜色、哪一款？",
+          "product_ids": [
+            "PONT20",
+            "PONT26"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-021",
+          "as_of": "2026-02-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "price",
+          "message": "白色那个7200已经不便宜了，礼物包装还要另收费吗？这个价能多包含点什么？",
+          "product_ids": [
+            "PONT20"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-022",
+          "as_of": "2026-02-04T10:00:00+08:00"
+        },
+        {
+          "scenario": "care",
+          "message": "妹妹习惯肩背，包到货后给我说一下肩带怎么调短吧。",
+          "product_ids": [
+            "PONT20"
+          ],
+          "facts": {},
+          "before": [
+            {
+              "kind": "purchase",
+              "actor": "system",
+              "text": "2月5日购买石灰白 Pont 20赠予妹妹，已交付。",
+              "data": {
+                "product_id": "PONT20"
+              },
+              "occurred_at": "2026-02-05T10:00:00+08:00"
+            }
+          ],
+          "trigger": "event",
+          "intent": "已交付，按购买者此前要求给收礼人补充肩带调节说明。",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-023",
+          "as_of": "2026-02-07T10:00:00+08:00",
+          "message_at": "2026-02-04T10:30:00+08:00"
+        },
+        {
+          "scenario": "reactivation",
+          "message": "妹妹收到礼物了。她这半年要准备考试，11月10日以后再问我们想不想看工艺吧。",
+          "product_ids": [
+            "PONT20"
+          ],
+          "facts": {
+            "contact_after": "2026-11-10T09:00:00+08:00"
+          },
+          "before": [],
+          "trigger": "timer",
+          "intent": "按约定日期恢复关系，围绕妹妹的工艺兴趣，先确认当前是否方便。",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-024",
+          "as_of": "2026-11-10T10:00:00+08:00",
+          "message_at": "2026-02-14T10:00:00+08:00"
+        },
+        {
+          "scenario": "invitation",
+          "message": "明天我和妹妹两个人过去，可以一组看吗？先别替我约，我问下她。",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": "bridge-preview",
+          "case_id": "V4-025",
+          "as_of": "2026-11-13T10:00:00+08:00"
+        }
+      ],
+      "initial_at": "2026-01-28T10:00:00+08:00"
+    },
+    {
+      "id": "long-06",
+      "name": "唐芮",
+      "salutation": "芮芮",
+      "introduction": "我平时轻装出门，想选件小皮具。2月7日生日，简单祝福就行。有关我需求的建议和活动可以发。",
+      "facts": {
+        "carry": "轻装出门，只带几张卡",
+        "birthday": "02-07",
+        "contact_permission": "allowed"
+      },
+      "episodes": [
+        {
+          "scenario": "recommendation",
+          "message": "只装几张卡，偶尔一两张折好的现金，选哪个更合适？",
+          "product_ids": [
+            "PASSAGE",
+            "ETUI04"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-026",
+          "as_of": "2026-02-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "price",
+          "message": "卡夹1800已经不便宜了，烫缩写还要收费吗？能不能包含在里面？",
+          "product_ids": [
+            "PASSAGE"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-027",
+          "as_of": "2026-02-04T10:00:00+08:00"
+        },
+        {
+          "scenario": "greeting",
+          "message": "生日只想安静休息一下，不想太热闹。",
+          "product_ids": [],
+          "facts": {
+            "communication": "生日想安静休息，不要追问行程"
+          },
+          "before": [],
+          "trigger": "timer",
+          "intent": "",
+          "occasion": "2月7日客户生日",
+          "event_id": null,
+          "case_id": "V4-028",
+          "as_of": "2026-02-07T10:00:00+08:00",
+          "message_at": "2026-02-05T10:00:00+08:00"
+        },
+        {
+          "scenario": "reactivation",
+          "message": "卡夹先不买了，接下来几个月想缓缓。11月10日以后再问我还想不想看吧。",
+          "product_ids": [
+            "PASSAGE"
+          ],
+          "facts": {
+            "contact_after": "2026-11-10T09:00:00+08:00"
+          },
+          "before": [],
+          "trigger": "timer",
+          "intent": "按约定日期确认卡夹需求是否仍在，不假定购买计划。",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-029",
+          "as_of": "2026-11-10T10:00:00+08:00",
+          "message_at": "2026-02-14T10:00:00+08:00"
+        },
+        {
+          "scenario": "invitation",
+          "message": "明天的活动能看到皮革包边过程吗？如果能，想了解一下预约。",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": "bridge-preview",
+          "case_id": "V4-030",
+          "as_of": "2026-11-13T10:00:00+08:00"
+        }
+      ],
+      "initial_at": "2026-01-28T10:00:00+08:00"
+    },
+    {
+      "id": "long-07",
+      "name": "贺之航",
+      "salutation": "之航",
+      "introduction": "想找能装电脑的通勤包，颜色偏绿。相关商品和活动可以联系我，我2月7日生日。",
+      "facts": {
+        "color": "绿色",
+        "carry": "13英寸电脑和A4文件",
+        "birthday": "02-07",
+        "contact_permission": "allowed"
+      },
+      "episodes": [
+        {
+          "scenario": "recommendation",
+          "message": "包要放电脑和文件，也别太沉。帮我把优缺点直接说清楚。",
+          "product_ids": [
+            "TRAVERSE32",
+            "TRANSIT"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-031",
+          "as_of": "2026-02-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "care",
+          "message": "包收到后装满东西感觉有点重，肩带能调吗？",
+          "product_ids": [
+            "TRAVERSE32"
+          ],
+          "facts": {},
+          "before": [
+            {
+              "kind": "purchase",
+              "actor": "system",
+              "text": "2月2日购买深杉绿 Traverse 32，2月4日签收。",
+              "data": {
+                "product_id": "TRAVERSE32"
+              },
+              "occurred_at": "2026-02-02T10:00:00+08:00"
+            }
+          ],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-032",
+          "as_of": "2026-02-04T10:00:00+08:00"
+        },
+        {
+          "scenario": "greeting",
+          "message": "今天生日，终于准点下班了。",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "2月7日客户生日",
+          "event_id": null,
+          "case_id": "V4-033",
+          "as_of": "2026-02-07T10:00:00+08:00"
+        },
+        {
+          "scenario": "reactivation",
+          "message": "我要长期出差，十一月才回来。11月10日之后可以再联系，想看看工艺展示。",
+          "product_ids": [],
+          "facts": {
+            "contact_after": "2026-11-10T09:00:00+08:00"
+          },
+          "before": [],
+          "trigger": "timer",
+          "intent": "按客户约定恢复联系，了解行程和兴趣是否仍一致，不默认已回上海。",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-034",
+          "as_of": "2026-11-10T10:00:00+08:00",
+          "message_at": "2026-02-14T10:00:00+08:00"
+        },
+        {
+          "scenario": "invitation",
+          "message": "我明天下午两点能到，但不确定名额还有没有。你帮我问问？",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": "bridge-preview",
+          "case_id": "V4-035",
+          "as_of": "2026-11-13T10:00:00+08:00"
+        }
+      ],
+      "initial_at": "2026-01-28T10:00:00+08:00"
+    },
+    {
+      "id": "long-08",
+      "name": "顾闻",
+      "salutation": "顾先生",
+      "introduction": "我在找好用、低调的钥匙包，想看看设计。相关新品与工艺活动可以通知我，生日是2月7日。",
+      "facts": {
+        "interest": "低调、好用的钥匙包",
+        "birthday": "02-07",
+        "contact_permission": "allowed"
+      },
+      "episodes": [
+        {
+          "scenario": "recommendation",
+          "message": "四把普通钥匙，平时放外套口袋，哪个更合适？",
+          "product_ids": [
+            "ETUI04",
+            "PASSAGE"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-036",
+          "as_of": "2026-02-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "care",
+          "message": "用了两天，想知道平时怎么保养，涂普通护手霜行吗？",
+          "product_ids": [
+            "ETUI04"
+          ],
+          "facts": {},
+          "before": [
+            {
+              "kind": "purchase",
+              "actor": "system",
+              "text": "2月2日购买咖啡棕 Etui 04并已交付。",
+              "data": {
+                "product_id": "ETUI04"
+              },
+              "occurred_at": "2026-02-02T10:00:00+08:00"
+            }
+          ],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-037",
+          "as_of": "2026-02-04T10:00:00+08:00"
+        },
+        {
+          "scenario": "greeting",
+          "message": "生日会跟朋友聚一下，你当天发句祝福我会很开心。",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "timer",
+          "intent": "",
+          "occasion": "2月7日客户生日",
+          "event_id": null,
+          "case_id": "V4-038",
+          "as_of": "2026-02-07T10:00:00+08:00",
+          "message_at": "2026-02-05T10:00:00+08:00"
+        },
+        {
+          "scenario": "reactivation",
+          "message": "前几天一直忙，你说的桥形零件我现在有点兴趣，能接着说说？",
+          "product_ids": [
+            "ETUI04"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-039",
+          "as_of": "2026-11-10T10:00:00+08:00"
+        },
+        {
+          "scenario": "invitation",
+          "message": "明天想去看看金属扣拆解，活动收费吗？必须买东西吗？",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": "bridge-preview",
+          "case_id": "V4-040",
+          "as_of": "2026-11-13T10:00:00+08:00"
+        }
+      ],
+      "initial_at": "2026-01-28T10:00:00+08:00"
+    },
+    {
+      "id": "long-09",
+      "name": "陆希",
+      "salutation": "希希",
+      "introduction": "给自己找一个周末用的小包，喜欢白色。我生日2月7日，相关建议和活动可以发，暂时不需要催单。",
+      "facts": {
+        "color": "白色",
+        "carry": "周末少量随身物",
+        "birthday": "02-07",
+        "contact_permission": "allowed"
+      },
+      "episodes": [
+        {
+          "scenario": "recommendation",
+          "message": "除了颜色，Pont 20和26背起来的区别能说具体点吗？",
+          "product_ids": [
+            "PONT20",
+            "PONT26"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-041",
+          "as_of": "2026-02-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "price",
+          "message": "7200有点犹豫，能送个卡夹或者免单刻字吗？",
+          "product_ids": [
+            "PONT20",
+            "PASSAGE"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-042",
+          "as_of": "2026-02-04T10:00:00+08:00"
+        },
+        {
+          "scenario": "greeting",
+          "message": "今天生日，刚收到蛋糕，心情很好。先不聊包哈。",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "2月7日客户生日",
+          "event_id": null,
+          "case_id": "V4-043",
+          "as_of": "2026-02-07T10:00:00+08:00"
+        },
+        {
+          "scenario": "reactivation",
+          "message": "最近想把颜色改成黑的了，我平时还是穿黑白多。可以重新帮我看看吗？",
+          "product_ids": [
+            "PONT20",
+            "PONT26"
+          ],
+          "facts": {
+            "color": "已改为黑色，当前不再以白色为购买偏好"
+          },
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-044",
+          "as_of": "2026-11-10T10:00:00+08:00"
+        },
+        {
+          "scenario": "invitation",
+          "message": "明天的活动是纯看工艺吗？不想去了就被推销。",
+          "product_ids": [],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": "bridge-preview",
+          "case_id": "V4-045",
+          "as_of": "2026-11-13T10:00:00+08:00"
+        }
+      ],
+      "initial_at": "2026-01-28T10:00:00+08:00"
+    },
+    {
+      "id": "long-10",
+      "name": "苏澄",
+      "salutation": "苏女士",
+      "introduction": "给自己找一个周末小包，喜欢深绿，平时只带手机钥匙。生日11月10日，生日和相关商品信息可以发。",
+      "facts": {
+        "color": "深绿色",
+        "carry": "周末带手机钥匙",
+        "birthday": "11-10",
+        "contact_permission": "allowed"
+      },
+      "episodes": [
+        {
+          "scenario": "recommendation",
+          "message": "我想要外面别太多标志，有点结构感。你建议哪个？",
+          "product_ids": [
+            "PONT26",
+            "PONT20"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-046",
+          "as_of": "2026-02-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "price",
+          "message": "8800确实贵，这个价格如果以后扣子松了，能一直免费修吗？",
+          "product_ids": [
+            "PONT26"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-047",
+          "as_of": "2026-02-04T10:00:00+08:00"
+        },
+        {
+          "scenario": "care",
+          "message": "刚买的包扣子有点松，不确定是不是我没扣好。你能直接给我换一个吗？",
+          "product_ids": [
+            "PONT26"
+          ],
+          "facts": {},
+          "before": [
+            {
+              "kind": "purchase",
+              "actor": "system",
+              "text": "2月5日购买深杉绿 Pont 26并交付，尚无门店检测记录。",
+              "data": {
+                "product_id": "PONT26"
+              },
+              "occurred_at": "2026-02-05T10:00:00+08:00"
+            }
+          ],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-048",
+          "as_of": "2026-02-07T10:00:00+08:00"
+        },
+        {
+          "scenario": "greeting",
+          "message": "国庆假期先陪家人，包的检测我改天再处理。",
+          "product_ids": [],
+          "facts": {
+            "care": "扣件问题待检测，客户表示改天再处理"
+          },
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "10月1日国庆节",
+          "event_id": null,
+          "case_id": "V4-049",
+          "as_of": "2026-10-01T10:00:00+08:00"
+        },
+        {
+          "scenario": "reactivation",
+          "message": "现在有空了，我们接着处理扣子吧。你需要我先提供什么？",
+          "product_ids": [
+            "PONT26"
+          ],
+          "facts": {},
+          "before": [],
+          "trigger": "reply",
+          "intent": "",
+          "occasion": "",
+          "event_id": null,
+          "case_id": "V4-050",
+          "as_of": "2026-11-13T10:00:00+08:00"
+        }
+      ],
+      "initial_at": "2026-01-28T10:00:00+08:00"
+    }
+  ],
+  "protocol": [
+    "按客户顺序应用事件与记忆，不能预装后续事实。",
+    "客户显式事实由声明输入建立；自动记忆提取另外用真实联调验证，不混淆两种测试。",
+    "每次保留完整当时上下文及请求、模型、代码和内容版本。",
+    "话术不自动当作已发送，不虚构客户已读、回复或成交。",
+    "不联系与边界行为另设样例，不用空候选凑满规定150条。",
+    "模型生成后如据此修改系统，这批须改标为开发数据，不能继续声称盲测。"
+  ]
+}

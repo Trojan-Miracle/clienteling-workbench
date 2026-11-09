@@ -1,0 +1,519 @@
+{
+  "version": "virel-demo-1",
+  "fictional": true,
+  "as_of": "2026-11-07T10:00:00+08:00",
+  "customers": [
+    {
+      "id": "lin",
+      "name": "林知遥",
+      "salutation": "知遥",
+      "summary": "Pont 26 深杉绿 · 曾约定生日后试背",
+      "color": "forest"
+    },
+    {
+      "id": "zhou",
+      "name": "周明远",
+      "salutation": "周先生",
+      "summary": "Transit 轻行 · 正在询问价格",
+      "color": "slate"
+    },
+    {
+      "id": "chen",
+      "name": "陈嘉宁",
+      "salutation": "嘉宁",
+      "summary": "Etui 04 · 想了解小皮具的价值",
+      "color": "clay"
+    },
+    {
+      "id": "he",
+      "name": "何亦安",
+      "salutation": "亦安",
+      "summary": "Pont 26 · 购后肩带使用咨询",
+      "color": "sage"
+    },
+    {
+      "id": "liang",
+      "name": "梁舒",
+      "salutation": "梁女士",
+      "summary": "暂停主动联系 · 等待客户重新咨询",
+      "color": "stone"
+    },
+    {
+      "id": "yu",
+      "name": "俞清",
+      "salutation": "俞女士",
+      "summary": "偏爱结构与五金 · 工艺预览邀请",
+      "color": "forest"
+    },
+    {
+      "id": "xu",
+      "name": "许行之",
+      "salutation": "行之",
+      "summary": "通勤需求变化 · 现在需要放电脑",
+      "color": "slate"
+    },
+    {
+      "id": "wu",
+      "name": "吴悦",
+      "salutation": "悦悦",
+      "summary": "生日礼物已确认 · 回复一句感谢",
+      "color": "sage"
+    }
+  ],
+  "events": [
+    {
+      "id": "lin-1",
+      "customer_id": "lin",
+      "occurred_at": "2026-10-12T15:10:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "我平时只带手机和短钱包，喜欢深一点的绿，标识小一点的。以后有合适的可以告诉我。",
+      "data": {}
+    },
+    {
+      "id": "lin-2",
+      "customer_id": "lin",
+      "occurred_at": "2026-10-12T15:12:00+08:00",
+      "kind": "message",
+      "actor": "advisor",
+      "text": "Pont 26 有深杉绿，正面只有桥形扣件。您下次方便时可以试背。",
+      "data": {}
+    },
+    {
+      "id": "lin-3",
+      "customer_id": "lin",
+      "occurred_at": "2026-10-29T16:20:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "11月7号我生日，不过这阵子在忙项目，生日之后我自己来找你试背就好，先不用安排。",
+      "data": {}
+    },
+    {
+      "id": "zhou-1",
+      "customer_id": "zhou",
+      "occurred_at": "2026-11-04T14:00:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "想找个轻点的斜挎，手机证件就够。你发来的Transit挺合适，可以继续聊这款。",
+      "data": {}
+    },
+    {
+      "id": "zhou-2",
+      "customer_id": "zhou",
+      "occurred_at": "2026-11-06T17:30:00+08:00",
+      "kind": "message",
+      "actor": "advisor",
+      "text": "Transit 黑色是5200元，约350克，可以斜挎。",
+      "data": {}
+    },
+    {
+      "id": "zhou-3",
+      "customer_id": "zhou",
+      "occurred_at": "2026-11-07T09:12:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "差200也超预算了，能不能就按5000？",
+      "data": {}
+    },
+    {
+      "id": "chen-1",
+      "customer_id": "chen",
+      "occurred_at": "2026-10-22T11:00:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "我想找个小礼物给自己，用很多年那种。你可以给我看看小皮具。",
+      "data": {}
+    },
+    {
+      "id": "chen-2",
+      "customer_id": "chen",
+      "occurred_at": "2026-11-06T16:20:00+08:00",
+      "kind": "message",
+      "actor": "advisor",
+      "text": "Etui 04 是2200元的四扣钥匙包，深杉绿与 Pont 是同一个系列的设计语言。",
+      "data": {}
+    },
+    {
+      "id": "chen-3",
+      "customer_id": "chen",
+      "occurred_at": "2026-11-07T09:08:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "四个挂钩就2200啊，它贵在哪里？",
+      "data": {}
+    },
+    {
+      "id": "he-1",
+      "customer_id": "he",
+      "occurred_at": "2026-10-30T14:20:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "就选深杉绿Pont 26。之后护理或者有使用问题，我们微信联系。",
+      "data": {}
+    },
+    {
+      "id": "he-order",
+      "customer_id": "he",
+      "occurred_at": "2026-10-30T14:35:00+08:00",
+      "kind": "purchase",
+      "actor": "system",
+      "text": "购买Pont 26 深杉绿，8800元，已在沙龙取货。",
+      "data": {
+        "product_id": "PONT26",
+        "order_id": "DEMO-1030",
+        "price_cny": 8800,
+        "status": "delivered"
+      }
+    },
+    {
+      "id": "he-2",
+      "customer_id": "he",
+      "occurred_at": "2026-11-07T08:50:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "肩带要怎么调短一点？现在想肩背。",
+      "data": {}
+    },
+    {
+      "id": "liang-1",
+      "customer_id": "liang",
+      "occurred_at": "2026-07-18T16:30:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "最近先不看了，新品和活动也不用再发我了，有需要我会找你。",
+      "data": {}
+    },
+    {
+      "id": "liang-2",
+      "customer_id": "liang",
+      "occurred_at": "2026-07-18T16:32:00+08:00",
+      "kind": "message",
+      "actor": "advisor",
+      "text": "好的，有需要时随时联系我。",
+      "data": {}
+    },
+    {
+      "id": "yu-1",
+      "customer_id": "yu",
+      "occurred_at": "2026-09-16T15:00:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "我对你们的金属扣结构挺感兴趣，如果有讲制作的活动可以叫我，普通上新就不用了。",
+      "data": {}
+    },
+    {
+      "id": "yu-2",
+      "customer_id": "yu",
+      "occurred_at": "2026-10-31T11:30:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "下周六下午我应该在上海，不过具体时间还不确定。",
+      "data": {}
+    },
+    {
+      "id": "yu-3",
+      "customer_id": "yu",
+      "occurred_at": "2026-11-07T09:20:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "我之前说的日期不太清楚，是11月14日周六下午可能在上海，具体时间还没定。",
+      "data": {}
+    },
+    {
+      "id": "xu-1",
+      "customer_id": "xu",
+      "occurred_at": "2026-10-10T14:30:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "以前不背电脑，包小一点更好，绿色不错。有合适的可以告诉我。",
+      "data": {}
+    },
+    {
+      "id": "xu-2",
+      "customer_id": "xu",
+      "occurred_at": "2026-11-07T09:00:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "最近换工作了，每天要带13寸电脑和A4文件，小包先不看了。有没有合适的？",
+      "data": {}
+    },
+    {
+      "id": "wu-1",
+      "customer_id": "wu",
+      "occurred_at": "2026-11-06T16:00:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "礼物是给妹妹的，她喜欢白色。我自己平时都买黑色。就帮我查一下白色Pont 20吧。",
+      "data": {}
+    },
+    {
+      "id": "wu-2",
+      "customer_id": "wu",
+      "occurred_at": "2026-11-07T08:40:00+08:00",
+      "kind": "message",
+      "actor": "advisor",
+      "text": "石灰白的型号和商品资料已经发您了，是否有可售库存我还需要确认。",
+      "data": {}
+    },
+    {
+      "id": "wu-3",
+      "customer_id": "wu",
+      "occurred_at": "2026-11-07T08:42:00+08:00",
+      "kind": "message",
+      "actor": "client",
+      "text": "好的谢谢。",
+      "data": {}
+    }
+  ],
+  "memories": [
+    {
+      "scope": "customer",
+      "owner_id": "lin",
+      "key": "contact_permission",
+      "value": "allowed",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "lin-1",
+      "effective_at": "2026-10-12T15:10:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "lin",
+      "key": "daily_carry",
+      "value": "手机、短钱包；偏好深绿和小标识",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "lin-1",
+      "effective_at": "2026-10-12T15:10:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "lin",
+      "key": "birthday",
+      "value": "11-07",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "lin-3",
+      "effective_at": "2026-10-29T16:20:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "lin",
+      "key": "visit_plan",
+      "value": "生日之后客户自己联系试背，不提前安排或催约",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "lin-3",
+      "effective_at": "2026-10-29T16:20:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "zhou",
+      "key": "contact_permission",
+      "value": "allowed",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "zhou-1",
+      "effective_at": "2026-11-04T14:00:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "zhou",
+      "key": "interest",
+      "value": "Transit，轻便，放手机和证件",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "zhou-1",
+      "effective_at": "2026-11-04T14:00:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "chen",
+      "key": "contact_permission",
+      "value": "allowed",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "chen-1",
+      "effective_at": "2026-10-22T11:00:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "chen",
+      "key": "gift_recipient",
+      "value": "给自己，不是送别人",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "chen-1",
+      "effective_at": "2026-10-22T11:00:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "he",
+      "key": "contact_permission",
+      "value": "allowed",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "he-1",
+      "effective_at": "2026-10-30T14:20:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "liang",
+      "key": "contact_permission",
+      "value": "no_marketing",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "liang-1",
+      "effective_at": "2026-07-18T16:30:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "yu",
+      "key": "contact_permission",
+      "value": "allowed",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "yu-1",
+      "effective_at": "2026-09-16T15:00:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "yu",
+      "key": "event_interest",
+      "value": "只对金属扣和制作展示活动感兴趣，不需要普通上新通知",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "yu-1",
+      "effective_at": "2026-09-16T15:00:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "yu",
+      "key": "availability",
+      "value": "11月14日下午可能在上海，具体时间未确定，尚未预约",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "yu-3",
+      "effective_at": "2026-11-07T09:20:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "xu",
+      "key": "contact_permission",
+      "value": "allowed",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "xu-1",
+      "effective_at": "2026-10-10T14:30:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "xu",
+      "key": "color",
+      "value": "偏好绿色",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "xu-1",
+      "effective_at": "2026-10-10T14:30:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "xu",
+      "key": "carry",
+      "value": "每天带13英寸电脑和A4文件；当前不看小包",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "xu-2",
+      "effective_at": "2026-11-07T09:00:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "wu",
+      "key": "contact_permission",
+      "value": "allowed",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "wu-1",
+      "effective_at": "2026-11-06T16:00:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "wu",
+      "key": "own_color",
+      "value": "购买者本人喜欢黑色",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "wu-1",
+      "effective_at": "2026-11-06T16:00:00+08:00"
+    },
+    {
+      "scope": "customer",
+      "owner_id": "wu",
+      "key": "recipient",
+      "value": "这次送妹妹，妹妹喜欢白色，查Pont 20石灰白",
+      "provenance": "explicit",
+      "source": "虚构客户对话/业务记录",
+      "source_event_id": "wu-1",
+      "effective_at": "2026-11-06T16:00:00+08:00"
+    }
+  ],
+  "workflows": {
+    "lin": {
+      "product_ids": [
+        "PONT26"
+      ],
+      "scenario": "greeting",
+      "trigger": "timer",
+      "occasion": "已确认客户生日为11月7日"
+    },
+    "zhou": {
+      "product_ids": [
+        "TRANSIT"
+      ],
+      "scenario": "price",
+      "trigger": "reply"
+    },
+    "chen": {
+      "product_ids": [
+        "ETUI04"
+      ],
+      "scenario": "price",
+      "trigger": "reply"
+    },
+    "he": {
+      "product_ids": [
+        "PONT26"
+      ],
+      "scenario": "care",
+      "trigger": "reply"
+    },
+    "liang": {
+      "product_ids": [],
+      "scenario": "reactivation",
+      "trigger": "timer"
+    },
+    "yu": {
+      "product_ids": [
+        "PONT26"
+      ],
+      "scenario": "invitation",
+      "trigger": "timer",
+      "event_id": "bridge-preview"
+    },
+    "xu": {
+      "product_ids": [
+        "TRAVERSE32",
+        "PONT26"
+      ],
+      "scenario": "recommendation",
+      "trigger": "reply"
+    },
+    "wu": {
+      "product_ids": [
+        "PONT20"
+      ],
+      "scenario": "conversation",
+      "trigger": "reply"
+    }
+  }
+}
