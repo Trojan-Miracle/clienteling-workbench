@@ -1,10 +1,12 @@
-# VIREL · 客户沟通工作台
+# Clienteling Workbench · 客户沟通工作台
 
 结合客户对话、关系记忆与商品资料，为顾问准备下一条微信回复。
 
 [观看演示 · 1分15秒](docs/demo.mp4) · [快速开始](#快速开始) · [系统结构](#系统结构)
 
 [![客户工作台：左侧查看客户，中间延续对话，右侧选择或修改回复](docs/images/workbench.png)](docs/demo.mp4)
+
+演示围绕虚构皮具品牌 MAISON VIREL 展开，包含商品、活动和连续客户关系。
 
 ## 从了解客户，到准备回复
 
@@ -39,8 +41,8 @@
 建议使用 Python 3.11–3.13。以下命令适用于 Linux / macOS 终端，Windows 可使用 WSL；已在 Linux / Python 3.13 验证。
 
 ```bash
-git clone https://github.com/Trojan-Miracle/virel-clienteling.git
-cd virel-clienteling
+git clone https://github.com/Trojan-Miracle/clienteling-workbench.git
+cd clienteling-workbench
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-memory.txt
